@@ -1,0 +1,13 @@
+.privacityContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url('../../assets/fundoPadrao.png');
+    height: 100vh;
+    color: white;
+}
+
+.privacityContainer h1 {
+    font-size: 4vw;
+    height: 0vw;
+}

@@ -1,0 +1,111 @@
+import { useState } from 'react';
+
+const FormsRgPrimeiraVia = () => {
+  const [state, setState] = useState('São Paulo');
+  const [city, setCity] = useState('');
+  const [cpf, setCpf] = useState('');
+  const [rgNumber, setRgNumber] = useState('');
+  const [rgIssuerState, setRgIssuerState] = useState('');
+  const [fullName, setFullName] = useState('');
+  const [socialName, setSocialName] = useState('');
+  const [gender, setGender] = useState('');
+  const [birthDate, setBirthDate] = useState('');
+
+  /* // TODO: Add function to fetch cities from API
+  // TODO: Add function to validate CPF
+  // TODO: Add function to validate RG */
+
+  return (
+    <form>
+      <label>
+        Estado:
+        <select value={state} onChange={e => setState(e.target.value)}>
+          <option value="São Paulo">São Paulo</option>
+        </select>
+      </label>
+      <br />
+      <label>
+        Cidade ou minicipio:
+        <select value={city} onChange={e => setCity(e.target.value)}>
+          {/* TODO: Populate options with cities from API */}
+        </select>
+      </label>
+      <br />
+      <label>
+        CPF:
+        <input
+          type="number"
+          value={cpf}
+          onChange={e => setCpf(e.target.value)}
+        />
+      </label>
+      <br />
+      <label>
+        Número de RG:
+        <input
+          type="number"
+          value={rgNumber}
+          onChange={e => setRgNumber(e.target.value)}
+        />
+      </label>
+      <br />
+      <label>
+        Estado Emissor do RG:
+        <input
+          type="text"
+          value={rgIssuerState}
+          onChange={e => setRgIssuerState(e.target.value)}
+        />
+      </label>
+      <br />
+      <label>
+        Nome Completo:
+        <input
+          type="text"
+          value={fullName}
+          onChange={e => setFullName(e.target.value)}
+        />
+      </label>
+      <br />
+      <label>
+        Nome Social:
+        <input
+          type="text"
+          value={socialName}
+          onChange={e => setSocialName(e.target.value)}
+        />
+      </label>
+      <br />
+      Gênero:
+      <label>
+        <input
+          type="radio"
+          name="gender"
+          value="Masculino"
+          checked={gender === 'Masculino'}
+          onChange={e => setGender(e.target.value)}
+        /> Masculino
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="gender"
+          value="Feminino"
+          checked={gender === 'Feminino'}
+          onChange={e => setGender(e.target.value)}
+        /> Feminino
+      </label>
+      <br />
+      <label>
+        Nascimento:
+        <input
+          type="text"
+          value={birthDate}
+          onChange={e => setBirthDate(e.target.value)}
+        />
+      </label>
+    </form>
+  );
+};
+
+export default FormsRgPrimeiraVia;

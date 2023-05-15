@@ -1,0 +1,60 @@
+.containerAboutServices {
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-image: url('../../assets/fundoPadrao.png');
+    width: 100%;
+    /* max-width: 100%; */
+    color: white;
+    height: 66vw;
+    overflow: hidden;
+}
+
+.titleAboutServices {
+    font-size: 6vw;
+    margin-left: 0.4vw;
+    color: #9340FF;
+    font-family: 'extra bold';
+}
+
+.listServices {
+    font-size: 2.8vw;
+    font-weight: bold;
+    margin-top: 1.8vw;
+}
+
+.listServices li {
+    position: relative;
+    left: 8.4vw;
+    top: 2vw;
+}
+
+.valueServices {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-top: 8vw;
+}
+
+.containerTextServices {
+    display: flex;
+    flex-direction: column;
+    /* z-index: 0; */
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+}
+
+.containerModelServicesImage {
+    background-image: url('../../assets/elipseViolet.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53.53vw;
+    background-size: auto 66vw;
+    background-repeat: no-repeat;
+    background-position: -1vw 0vw;
+}
+
+.exclamaLana {
+    margin-left: 12vw;
+    height: 52vw;
+}

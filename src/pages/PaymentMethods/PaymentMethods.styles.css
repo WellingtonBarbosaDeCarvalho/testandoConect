@@ -1,0 +1,36 @@
+.containerPaymentMethod {
+    background-image: url('../../assets/fundoPadrao.png');
+    height: 60vw;
+    color: white;
+}
+
+.containerPaymentMethod p {
+    font-size: 3.4vw;
+    text-align: center;
+    padding: 2.4vw 2.4vw 0em 2.4vw;
+    font-weight: bold;
+}
+
+.containerImgBoletoAndPix {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.containerImgBoletoAndPix button {
+    display: flex;
+    justify-content: center;
+    margin-top: 6vw;
+    border-radius: 4vw;
+    height: 8.6vw;
+    width: 32vw;
+    background-color: #9340FF;
+    color: white;
+    font-size: 2.8vw;
+    font-weight: bold;
+    border: 0px;
+}
+
+button {
+   
+}

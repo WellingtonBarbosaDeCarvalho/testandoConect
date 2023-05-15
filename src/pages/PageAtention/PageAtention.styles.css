@@ -1,0 +1,22 @@
+.containerPageAtention {
+    background-image: url('../../assets//fundoPadrao.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vw;
+    color: white;
+    overflow: hidden;
+}
+
+.containerPageAtention h1 {
+    color: #9340FF;
+    font-weight: bold;
+    font-size: 6vw;
+    font-family: 'extra bold';
+}
+
+.containerPageAtention p {
+    font-weight: bold;
+    font-size: 2.8vw;
+    padding: 4vw;
+}

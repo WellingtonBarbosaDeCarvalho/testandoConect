@@ -1,0 +1,25 @@
+.containerAppointmentScheduling {
+    background-image: url('../../assets/fundoPadrao.png');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 58vw;
+    overflow: hidden;
+}
+
+.containerAppointmentScheduling img {
+    width: 56vw;
+}
+
+.containerAppointmentScheduling button {
+    height: 10vw;
+    width: 36vw;
+    border-radius: 4vw;
+    background-color: #9340FF;
+    border: 0px;
+    color: white;
+    font-size: 3.2vw;
+    font-weight: bold;
+    /* margin-left: 3.8rem; */
+    margin-top: 4vw;
+}

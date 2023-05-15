@@ -1,0 +1,15 @@
+.containerSecondPage {
+    background-image: url('../../assets/fundoPadrao.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34rem;
+    color: white;
+}
+
+.paragraphSecondPage {
+    font-size: 3.4em;
+    padding: 0.4em;
+    text-align: center;
+}
+

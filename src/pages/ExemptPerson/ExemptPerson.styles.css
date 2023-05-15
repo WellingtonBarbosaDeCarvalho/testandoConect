@@ -1,0 +1,30 @@
+.containerExemptPerson {
+    background-image: url('../../assets/fundoPadrao.png');
+    height: 48vw;
+    color: white;
+}
+
+.titleExemptPerson {
+    font-family: 'extra bold';
+    padding: 4vw;
+    color: #9340FF;
+    margin-left: 2vw;
+    font-size: 3.6vw;
+}
+
+.listIsentPerson {
+    margin-top: -1.4rem;
+    font-weight: bold;
+    padding: 4vw;
+    line-height: 1.8;
+}
+
+.poupaTempoOrgao {
+    font-size: xx-large;
+    padding: 1vw;
+    margin-left: 2vw;
+}
+
+.poupaTempoOrgao span {
+    color: #9340FF;
+}

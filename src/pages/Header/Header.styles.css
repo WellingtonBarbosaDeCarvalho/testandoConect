@@ -1,0 +1,55 @@
+.containerHeader {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    /* flex-wrap: wrap; */
+    background-image: url('../../assets/fundoPadrao.png');
+    color: white;
+    overflow: hidden;
+  }
+
+.containerTitleHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 6vw;
+    width: 30vw;
+    max-height: 20vw; 
+}
+
+.containerElipseAndExcla {
+    display: flex;
+    position: relative;
+    right: 8vw;
+    background-image: url('../../assets/elipseViolet.png');
+    background-repeat: no-repeat;
+    background-size: 70vw 70vw;
+    background-position: center;
+    width: 68vw;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.titleHeader {
+    text-shadow: 0.4vw 0.4vw 0.4vw #9340FF;
+    font-family: 'extra bold';
+    font-size: 5vw;
+    z-index: 1;
+  }
+
+.exclamacaoLana {
+    height: 14vw;
+    margin-left: 1vw;
+    z-index: 1;
+}
+
+.conectandoModels {
+    position: relative;
+    left: 4vw;
+    height: 68vw;
+}

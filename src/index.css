@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "extra bold";
+  src: url('./fonts/CodecPro-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: "open sans";
+  src: url('./fonts/OpenSans-Bold.ttf');
+}
+
+* {
+  font-family: 'open sans';
+}

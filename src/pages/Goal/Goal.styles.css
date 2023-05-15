@@ -1,0 +1,15 @@
+.containerGoal {
+    background-image: url('../../assets/fundoPadrao.png');
+    display: flex;
+    align-items: center;
+    height: 30rem;
+    color: white;
+    font-family: sans-serif;
+}
+
+.containerGoal p {
+    font-size: 4vw;
+    text-align: center;
+    padding: 1vw;
+    font-weight: bold;
+}
