@@ -1,111 +1,201 @@
-import { useState } from 'react';
+.containerFormsContact {
+  background-image: url('../../assets/fundoPadrao.png');
+  height: 166vw;
+}
 
-const FormsRgPrimeiraVia = () => {
-  const [state, setState] = useState('São Paulo');
-  const [city, setCity] = useState('');
-  const [cpf, setCpf] = useState('');
-  const [rgNumber, setRgNumber] = useState('');
-  const [rgIssuerState, setRgIssuerState] = useState('');
-  const [fullName, setFullName] = useState('');
-  const [socialName, setSocialName] = useState('');
-  const [gender, setGender] = useState('');
-  const [birthDate, setBirthDate] = useState('');
+.forms-container {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
 
-  /* // TODO: Add function to fetch cities from API
-  // TODO: Add function to validate CPF
-  // TODO: Add function to validate RG */
+.containerStateMunici {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0px 0.1vw 0em rgba(247, 247, 247, 0.2);
+  padding: 2vw;
+  margin: 2vw;
+}
 
-  return (
-    <form>
-      <label>
-        Estado:
-        <select value={state} onChange={e => setState(e.target.value)}>
-          <option value="São Paulo">São Paulo</option>
-        </select>
-      </label>
-      <br />
-      <label>
-        Cidade ou minicipio:
-        <select value={city} onChange={e => setCity(e.target.value)}>
-          {/* TODO: Populate options with cities from API */}
-        </select>
-      </label>
-      <br />
-      <label>
-        CPF:
-        <input
-          type="number"
-          value={cpf}
-          onChange={e => setCpf(e.target.value)}
-        />
-      </label>
-      <br />
-      <label>
-        Número de RG:
-        <input
-          type="number"
-          value={rgNumber}
-          onChange={e => setRgNumber(e.target.value)}
-        />
-      </label>
-      <br />
-      <label>
-        Estado Emissor do RG:
-        <input
-          type="text"
-          value={rgIssuerState}
-          onChange={e => setRgIssuerState(e.target.value)}
-        />
-      </label>
-      <br />
-      <label>
-        Nome Completo:
-        <input
-          type="text"
-          value={fullName}
-          onChange={e => setFullName(e.target.value)}
-        />
-      </label>
-      <br />
-      <label>
-        Nome Social:
-        <input
-          type="text"
-          value={socialName}
-          onChange={e => setSocialName(e.target.value)}
-        />
-      </label>
-      <br />
-      Gênero:
-      <label>
-        <input
-          type="radio"
-          name="gender"
-          value="Masculino"
-          checked={gender === 'Masculino'}
-          onChange={e => setGender(e.target.value)}
-        /> Masculino
-      </label>
-      <label>
-        <input
-          type="radio"
-          name="gender"
-          value="Feminino"
-          checked={gender === 'Feminino'}
-          onChange={e => setGender(e.target.value)}
-        /> Feminino
-      </label>
-      <br />
-      <label>
-        Nascimento:
-        <input
-          type="text"
-          value={birthDate}
-          onChange={e => setBirthDate(e.target.value)}
-        />
-      </label>
-    </form>
-  );
-};
+.inputState {
+  width: 60vw;
+  margin: 1vw;
+}
 
-export default FormsRgPrimeiraVia;
+.containerStateMunici h3 {
+  padding: 1vw;
+  margin-bottom: 6vw;
+  box-shadow: 0px 0.1vw 0em rgba(247, 247, 247, 0.2);
+}
+
+.containerCPFandRG {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0.1vw 0em rgba(247, 247, 247, 0.2);
+
+}
+
+.containerCPFandRG h2 {
+  padding: 4vw;
+}
+
+.rgLabel {
+  margin-left: 10vw;
+}
+
+.emissorRgAndName {
+    display: flex;
+    padding: 2vw;
+    width: 100%;
+}
+
+.emissorRgAndName input {
+  text-align: center;
+  font-size: 2.8vw;
+  /* padding-left: 10em; */
+}
+
+.containerFullName {
+  margin-left: 10vw;
+}
+
+.rgCpfFlex {
+  display: flex;
+  padding: 4vw;
+  width: 100%;
+}
+
+.rgCpfFlex input {
+  text-align: center;
+  font-size: 2.8vw;
+  /* padding-left: 10em; */
+}
+
+.containerSocialName {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2vw;
+  width: 100%;
+}
+
+.labelSocialName {
+  margin-right: 10vw;
+}
+
+.containerSocialName input {
+  text-align: center;
+  font-size: 2.8vw;
+}
+
+.containerTitleForms {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+}
+
+.containerTitleForms h1 {
+  color: #9340FF;
+}
+
+.containerTitleForms h5 {
+  color: #cbd2d8
+}
+
+.forms-container label,
+.forms-container input,
+.forms-container select {
+  margin-bottom: 2vw;
+}
+
+.forms-container button {
+  background-color: #ffffff;
+  color: #101728;
+  padding: 10vw 20vw;
+  border: none;
+  cursor: pointer;
+}
+
+.option {
+  display: inline-block;
+  padding: 2vw;
+  border-radius: 0.8vw;
+  border: 0.1vw solid #9340FF;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #9340FF;
+  box-shadow: 0 0 10vw rgba(112, 17, 167, 0.5);
+  color: white;
+  border: 0.4vw #1b4ac2;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.labelFormGener {
+  margin-right: 1vw;
+}
+
+.labelSexMasc {
+  margin-right: 1vw;
+}
+
+.containerButtonSubmit {
+  display: flex;
+  justify-content: end;
+  height: 4vw;
+  padding: 1vw;
+}
+
+.containerButtonSubmit button {
+  height: 6vw;
+  font-size: 2vw;
+  padding: 0em 6vw 0em 6vw;
+  border-radius: 0.3em;
+  color: white;
+  background-color: #9340FF;
+  /* margin-top: 1em; */
+}
+
+.containerButtonSubmit button:hover {
+  background-color: #7B2CBF;
+  transition: background-color 0.5s;
+}
+
+.containerButtonSubmit button:active {
+  background-color: #7B2CBF;
+}
+
+
+.containerButtonSubmit button, span {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.containerButtonSubmit span::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.2vw;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  transform-origin: left;
+}
+
+.containerButtonSubmit:hover span {
+  transform: translateY(-0.1vw);
+}
+
+.containerButtonSubmit:hover span::before {
+  transform: scaleX(1);
+}
