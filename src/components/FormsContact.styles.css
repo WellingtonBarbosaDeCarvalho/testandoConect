@@ -34,7 +34,7 @@ form {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+    /* transition: background-color 0.2s ease-in-out; */
   }
   
   button[type="submit"]:hover {

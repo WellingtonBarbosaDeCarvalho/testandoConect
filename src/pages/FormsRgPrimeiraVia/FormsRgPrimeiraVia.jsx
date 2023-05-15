@@ -91,7 +91,7 @@ export default function FormsRgPrimeiraVia() {
                             onChange={(e) =>setCidade(e.target.value)}
                         >
                             {municipios.map((municipio) => (
-                                <option>{municipio.nome}</option>
+                                <option key={municipio}>{municipio.nome}</option>
                             ))}
                         </select>
                         ) : <p>Carregando.......</p>
@@ -112,6 +112,7 @@ export default function FormsRgPrimeiraVia() {
                                 value={cpf}
                                 onChange={handleCpfChange}
                                 className="form-control"
+                                placeholder='CPF'
                             />
                         </label>
                                    
@@ -123,7 +124,7 @@ export default function FormsRgPrimeiraVia() {
                             value={rg}
                             onChange={handleRgChange}
                             className="form-control"
-                            // placeholder='RG'
+                            placeholder='RG'
                         />
                         </label>
                     </div>

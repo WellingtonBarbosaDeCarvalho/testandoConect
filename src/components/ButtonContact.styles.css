@@ -39,6 +39,7 @@
     transform: scaleX(0);
     transition: transform 0.5s;
     transform-origin: left;
+    
   }
   
   .buttonAboutServices:hover span {
@@ -49,3 +50,13 @@
     transform: scaleX(1);
   }
  
+  .buttonAboutServices {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.buttonAboutServices:hover {
+  text-decoration: none;
+  color: white;
+}

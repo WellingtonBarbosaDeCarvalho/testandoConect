@@ -33,7 +33,7 @@ export default function Contact() {
         </div>
             <footer className="containerPrivacity">
                 <Link to="/privacity">Política de privacidade</Link>
-                <Link to="contactForms">Formulário</Link>
+                <Link to="/formulario">Formulário</Link>
             </footer>
         </div>
       </section>

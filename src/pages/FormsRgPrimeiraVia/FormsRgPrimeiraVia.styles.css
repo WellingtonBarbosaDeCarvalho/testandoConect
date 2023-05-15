@@ -1,6 +1,6 @@
 .containerFormsContact {
   background-image: url('../../assets/fundoPadrao.png');
-  height: 166vw;
+  height: 138vw;
 }
 
 .forms-container {
@@ -69,7 +69,6 @@
 .rgCpfFlex input {
   text-align: center;
   font-size: 2.8vw;
-  /* padding-left: 10em; */
 }
 
 .containerSocialName {
@@ -118,8 +117,13 @@
 }
 
 .option {
-  display: inline-block;
-  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 8vw;
+  height: 4vw;
+  font-size: 1.4vw;
   border-radius: 0.8vw;
   border: 0.1vw solid #9340FF;
   cursor: pointer;
@@ -165,37 +169,9 @@ input[type="radio"] {
 
 .containerButtonSubmit button:hover {
   background-color: #7B2CBF;
-  transition: background-color 0.5s;
+  /* transition: background-color 0.5s; */
 }
 
 .containerButtonSubmit button:active {
   background-color: #7B2CBF;
-}
-
-
-.containerButtonSubmit button, span {
-  display: inline-block;
-  position: relative;
-  transition: transform 0.5s;
-}
-
-.containerButtonSubmit span::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.2vw;
-  background-color: white;
-  transform: scaleX(0);
-  transition: transform 0.5s;
-  transform-origin: left;
-}
-
-.containerButtonSubmit:hover span {
-  transform: translateY(-0.1vw);
-}
-
-.containerButtonSubmit:hover span::before {
-  transform: scaleX(1);
 }

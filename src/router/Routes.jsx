@@ -9,7 +9,7 @@ export default function AppRouter() {
         <Switch>
           <Route exact path="/" component={AllPages} />
           <Route exact path="/privacity" component={Privacity} />
-          <Route path="/contactForms" component={FormsRgPrimeiraVia} />
+          <Route path="/formulario" component={FormsRgPrimeiraVia} />
         </Switch>
       </Router>
     );
