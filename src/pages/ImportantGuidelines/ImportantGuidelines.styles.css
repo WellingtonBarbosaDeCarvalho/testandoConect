@@ -1,32 +1,33 @@
 .containerImportantGuidelines {
     background-image: url('../../assets/fundoPadrao.png');
-    height: 120vh;
+    /* height: 36em;
+    min-height: 36em; */
     color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .titleImportanteGuidelines {
     color: #9340FF;
     font-family: 'extra bold';
-    font-size: 2.2vw;
+    font-size: 3.7vw;
     margin-left: 2vw;
 }
 
 .listOrientationGuidelines {
     padding: 2em;
     font-weight: bold;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 .titleBabesGuidelines {
     font-family: 'extra bold';
     color: #9340FF;
     margin-left: 4vw;
-    font-size: 2.2vw;
+    font-size: 3.7vw;
 }
 
 .listGuidelinesForBaby {
-    /* padding: 15em; */
+    padding: 2em;
     font-weight: bold;
-    line-height: 1.4;
+    line-height: 1.6;
 }
