@@ -1,0 +1,84 @@
+.containerSegundaPartePrimeiraVia {
+    background-image: url('../../../assets/fundoPadrao.png');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.containerTitleSegundaParte h1 {
+    color: #9340ff;
+}
+
+.containerTitleSegundaParte h5 {
+    margin-left: 2vw;
+}
+
+.containerFormSegundaParte {
+    /* margin: 0 auto; */
+    height: 80%;
+    width: 80%;
+    /* background-color: white; */
+}
+
+.inputEmailLabel {
+    margin-left: 10vw;
+}
+
+.containerTitleSegundaParte {
+    padding: 2vw;
+}
+
+.segundaParteInputEmail {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputEmailSegundaParte {
+    font-size: 2vw;
+    width: 36vw;
+}
+
+.inputTelSegundaParte {
+    font-size: 2vw;
+    width: 34vw;
+}
+
+/* .secondBottomForms {
+    display: flex;
+    padding: 2vw;
+    justify-content: end;
+} */
+
+.secondBottomForms {
+    display: flex;
+    justify-content: end;
+    height: 4vw;
+    /* padding: 1vw; */
+    margin-top: 2vw;
+  }
+  
+  .secondBottomForms button {
+    height: 5vw;
+    font-size: 2vw;
+    padding: 0em 6vw 0em 6vw;
+    border-radius: 1vw 1.2vw 1.2vw 1vw;
+    color: white;
+    background-color: #9340FF;
+    border: 0px;
+    /* margin-top: 1em; */
+  }
+  
+  .secondBottomForms button:hover {
+    background-color: #7B2CBF;
+    /* transition: background-color 0.5s; */
+  }
+  
+  .secondBottomForms button:active {
+    background-color: #7B2CBF;
+  }
+  

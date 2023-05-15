@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
+
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import InputMask from 'react-input-mask';
 
 import './FormsRgPrimeiraVia.styles.css';
@@ -16,6 +19,9 @@ export default function FormsRgPrimeiraVia() {
     const [sexo, setSexo] = useState('');
     const [nascimento, setNascimento] = useState('');
     const [municipios, setMunicipios] = useState([]);
+
+    const history = useHistory();
+    console.log(history);
   
     useEffect(() => {
         const fetchMunicipios = async () => {
@@ -205,7 +211,11 @@ export default function FormsRgPrimeiraVia() {
                 </div>
                 </div>
                 <footer className="containerButtonSubmit">
-                    <button type="submit">
+                    <button
+                        onClick={
+                            () => history.push('/formularioContact')
+                        }
+                    >
                         <span>
                         Continuar
                         </span>
