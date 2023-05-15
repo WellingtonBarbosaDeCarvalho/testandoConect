@@ -2,7 +2,7 @@
     background-image: url('../../assets/fundoPadrao.png');
     display: flex;
     align-items: center;
-    height: 30rem;
+    height: 48vw;
     color: white;
     font-family: sans-serif;
 }

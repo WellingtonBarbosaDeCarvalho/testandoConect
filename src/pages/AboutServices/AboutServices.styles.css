@@ -1,9 +1,6 @@
 .containerAboutServices {
     display: flex;
-    /* flex-wrap: wrap; */
     background-image: url('../../assets/fundoPadrao.png');
-    /* width: 100%; */
-    /* max-width: 100%; */
     color: white;
     height: 66vw;
     overflow: hidden;
