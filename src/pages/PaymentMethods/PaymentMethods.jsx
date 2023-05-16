@@ -6,7 +6,7 @@ export default function PaymentMethod() {
       <section className="containerPaymentMethod">
         <p>
         E só após a confirmação do pagamento da taxa de serviço,
-        é que o agendamento será confirmado através do WhatsApp ou email,
+        é que o agendamento será confirmado através do Whatsapp ou E-mail,
         e o prazo aproximado em média é de 15 dias após a confirmação do pagamento.
         </p>
         <div className="containerImgBoletoAndPix">

@@ -19,6 +19,7 @@ export default function FormsRgPrimeiraVia() {
     const [sexo, setSexo] = useState('');
     const [nascimento, setNascimento] = useState('');
     const [municipios, setMunicipios] = useState([]);
+    const [mensagemAviso, setMensagemAviso] = useState('');
 
     const history = useHistory();
   
@@ -41,6 +42,19 @@ export default function FormsRgPrimeiraVia() {
         setCpf(formattedCpf);
       };
 
+      const isFormValid = () => {
+        return (
+          estado &&
+          cidade &&
+          cpf &&
+          rg &&
+          estadoEmissor &&
+          nomeCompleto &&
+          sexo &&
+          nascimento
+        );
+      };
+
       const handleSexoChange = (event) => {
         setSexo(event.target.value);
       };
@@ -55,10 +69,65 @@ export default function FormsRgPrimeiraVia() {
       };
   
     // Função para lidar com o envio do formulário
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      // Aqui você pode fazer o envio dos dados para o servidor ou realizar outras ações necessárias
-    };
+
+    function validarFormulario(event) {
+        event.preventDefault(); // Evita que a página seja recarregada ao submeter o formulário
+      
+        if (
+          estado.trim() === '' ||
+          cidade.trim() === '' ||
+          cpf.trim() === '' ||
+          rg.trim() === '' ||
+          estadoEmissor.trim() === '' ||
+          nomeCompleto.trim() === '' ||
+          nomeSocial.trim() === '' ||
+          genero.trim() === '' ||
+          dataNascimento.trim() === ''
+        ) {
+          setMensagemAviso('Todos os campos devem ser preenchidos corretamente.');
+        } else {
+          // Todos os campos estão preenchidos corretamente, você pode prosseguir com a lógica desejada
+          const data = [
+                {
+                    estado,
+                    cidade,
+                    cpf,
+                    rg,
+                    estadoEmissor,
+                    nomeCompleto,
+                    nomeSocial,
+                    sexo,
+                    nascimento,
+                }
+            ];
+          setMensagemAviso('');
+          localStorage.setItem('data', JSON.stringify(data));
+          history.push('/formularioContact');
+        }
+      }
+    //   const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log(isFormValid());
+    
+    //     if (isFormValid()) {
+    //       const data = [{
+    //         estado,
+    //         cidade,
+    //         cpf,
+    //         rg,
+    //         estadoEmissor,
+    //         nomeCompleto,
+    //         nomeSocial,
+    //         sexo,
+    //         nascimento,
+    //       }];
+    
+    //       localStorage.setItem('data', JSON.stringify(data));
+    //       history.push('/formularioContact');
+    //     } else {
+    //       setShowErrorMessage(true);
+    //     }
+    //   };
   
     return (
         <div className="containerFormsContact">
@@ -70,7 +139,7 @@ export default function FormsRgPrimeiraVia() {
                     pedido de documento
                 </h5>
             </div>
-            <form className="forms-container" onSubmit={handleSubmit}>
+            <form className="forms-container" onSubmit={validarFormulario}>
                 <div className="containerStateMunici">
                     <h3>
                         Local do Agendamento:
@@ -209,30 +278,14 @@ export default function FormsRgPrimeiraVia() {
                     </label>
                 </div>
                 </div>
-                <footer className="containerButtonSubmit">
-                    <button
-                        onClick={() => {
-                            const data = [{
-                                estado,
-                                cidade,
-                                cpf,
-                                rg,
-                                estadoEmissor,
-                                nomeCompleto,
-                                nomeSocial,
-                                sexo,
-                                nascimento,
-                            }];
-                            localStorage.setItem('data', JSON.stringify(data));
-                            return history.push('/formularioContact')
-                        }
-                        }
-                    >
-                        <span>
-                        Continuar
-                        </span>
-                    </button>
-                </footer>
+                {mensagemAviso.length > 0 && <p>{mensagemAviso}</p>}
+        <footer className="containerButtonSubmit">
+          <button
+            disabled={!isFormValid()}
+          >
+            <span>Continuar</span>
+          </button>
+        </footer>
             </form>
         </div>
 );

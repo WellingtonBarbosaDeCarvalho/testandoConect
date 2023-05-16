@@ -24,7 +24,7 @@ export default function ExemptPerson() {
             </li>
             <li>
                 Documento danificado ou extraviado devido a desastres naturais,
-                apresentando o B.O em até 90 dias após o acontecimento
+                apresentando o B.O em até 90 dias após o acontecimento.
             </li>
         </ul>
         <h2 className="poupaTempoOrgao">
