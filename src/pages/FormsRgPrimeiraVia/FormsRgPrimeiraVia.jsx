@@ -225,7 +225,6 @@ export default function FormsRgPrimeiraVia() {
                             }];
                             localStorage.setItem('data', JSON.stringify(data));
                             return history.push('/formularioContact')
-
                         }
                         }
                     >
