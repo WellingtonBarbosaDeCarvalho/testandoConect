@@ -1,6 +1,7 @@
 import './Footer.styles.css';
 
 import ideias from '../../assets/Ideias.png';
+import exclamacao from '../../assets/Headline.png';
 
 export default function Footer() {
   return (
@@ -12,6 +13,11 @@ export default function Footer() {
             />
         </div>
         <div className="containerParagraphFooter">
+            <img
+                src={ exclamacao }
+                alt="Logo do marca conectando soluções by: lana"
+                className='exclamacaoLanaFooter'
+            />
             <p>
                 Que bom que você chegou até aqui
                 Vamos falar um pouco sobre nossa empresa! 

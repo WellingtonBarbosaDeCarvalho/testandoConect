@@ -13,6 +13,7 @@
     font-weight: 900;
     font-size: 1.8vw;
     line-height: 2.6vw;
+    letter-spacing: 0.2vw;
 }
 
 .containerImgFooter {
@@ -21,4 +22,11 @@
 
 .containerImgFooter img {
     height: 26vw;
+}
+
+.exclamacaoLanaFooter {
+    position: relative;
+    left: 38vw;
+    top: 2.6vw;
+    height: 4.8vw;
 }
