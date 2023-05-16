@@ -23,7 +23,7 @@
 }
 
 .inputEmailLabel {
-    margin-left: 10vw;
+    /* margin-left: 10vw; */
 }
 
 .containerTitleSegundaParte {
@@ -54,7 +54,7 @@
     display: flex;
     justify-content: end;
     height: 4vw;
-    /* padding: 1vw; */
+    padding: 1vw;
     margin-top: 2vw;
   }
   
@@ -80,5 +80,19 @@
 
   .segundaParteInputEmail h4 {
     margin-bottom: 4vw;
+  }
+
+  .containerInputSegundaParte {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    /* width: 80vw; */
+    /* justify-content: space-around; */
+  }
+
+  .containerInputSegundaParte input {
+    margin: 2vw;
+    /* width: 80vw; */
+    /* justify-content: space-around; */
   }
   

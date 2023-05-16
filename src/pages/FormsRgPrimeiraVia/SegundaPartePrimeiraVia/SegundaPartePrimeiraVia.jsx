@@ -41,7 +41,7 @@ export default function SegundaPartePrimeiraVia() {
                 <div className="segundaParteInputEmail">
                     <h4>Seu dados para contato</h4>
                     <form action="">
-                        <div>
+                        <div className="containerInputSegundaParte">
                             <label htmlFor="inputTelefone">
                             Telefone com DDD:
                                 {' '}
