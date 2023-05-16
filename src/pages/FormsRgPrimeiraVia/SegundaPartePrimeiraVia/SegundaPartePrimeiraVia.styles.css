@@ -41,18 +41,14 @@
 .inputEmailSegundaParte {
     font-size: 2vw;
     width: 36vw;
+    text-align: center;
 }
 
 .inputTelSegundaParte {
     font-size: 2vw;
     width: 34vw;
+    text-align: center;
 }
-
-/* .secondBottomForms {
-    display: flex;
-    padding: 2vw;
-    justify-content: end;
-} */
 
 .secondBottomForms {
     display: flex;
@@ -80,5 +76,9 @@
   
   .secondBottomForms button:active {
     background-color: #7B2CBF;
+  }
+
+  .segundaParteInputEmail h4 {
+    margin-bottom: 4vw;
   }
   

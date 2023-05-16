@@ -1,6 +1,6 @@
 .containerFormsContact {
   background-image: url('../../assets/fundoPadrao.png');
-  height: 138vw;
+  min-height: 118vw;
 }
 
 .forms-container {
@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  box-shadow: 0px 0.1vw 0em rgba(247, 247, 247, 0.2);
+  box-shadow: 0px 0.4vw 0em rgba(247, 247, 247, 0.2);
   padding: 2vw;
   margin: 2vw;
 }
@@ -26,13 +26,13 @@
 .containerStateMunici h3 {
   padding: 1vw;
   margin-bottom: 6vw;
-  box-shadow: 0px 0.1vw 0em rgba(247, 247, 247, 0.2);
+  box-shadow: 0px 0.4vw 0em rgba(247, 247, 247, 0.2);
 }
 
 .containerCPFandRG {
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 0px 0.1vw 0em rgba(247, 247, 247, 0.2);
+  box-shadow: 0px 0.4vw 0em rgba(247, 247, 247, 0.2);
 }
 
 .containerCPFandRG h2 {
@@ -52,7 +52,8 @@
 .emissorRgAndName input {
   text-align: center;
   font-size: 2.2vw;
-  /* padding-left: 10em; */
+  height: 4vw;
+  width: 40vw;
 }
 
 .containerFullName {
@@ -61,13 +62,15 @@
 
 .rgCpfFlex {
   display: flex;
-  padding: 4vw;
+  padding: 2vw;
   width: 100%;
 }
 
 .rgCpfFlex input {
   text-align: center;
   font-size: 2.2vw;
+  height: 4vw;
+  width: 40vw;
 }
 
 .containerSocialName {
@@ -82,9 +85,11 @@
   margin-right: 10vw;
 }
 
-.containerSocialName input {
+.socialNameInput {
   text-align: center;
   font-size: 2.2vw;
+  height: 4vw;
+  width: 40vw;
 }
 
 .containerTitleForms {
@@ -120,8 +125,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 8vw;
-  height: 4vw;
+  width: 12vw;
+  height: 6vw;
   font-size: 1.4vw;
   border-radius: 0.8vw;
   border: 0.1vw solid #9340FF;

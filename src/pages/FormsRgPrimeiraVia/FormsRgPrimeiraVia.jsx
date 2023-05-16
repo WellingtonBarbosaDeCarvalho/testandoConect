@@ -163,7 +163,7 @@ export default function FormsRgPrimeiraVia() {
                                 type="text"
                                 value={nomeSocial}
                                 onChange={(e) => setNomeSocial(e.target.value)}
-                                className="form-control"
+                                className="form-control socialNameInput"
                                 placeholder="Nome Social" aria-label="Nome Social"
                             />
                         </label>
@@ -204,7 +204,7 @@ export default function FormsRgPrimeiraVia() {
                         value={nascimento}
                         onChange={handleDataNascimentoChange}
                         placeholder="dd/mm/aaaa"
-                        className="form-control"
+                        className="form-control socialNameInput"
                     />
                     </label>
                 </div>
