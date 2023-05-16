@@ -1,8 +1,7 @@
 .containerFormsContact {
   background-image: url('../../assets/fundoPadrao.png');
-  /* min-height: 128vw; */
-  /* max-height: 128vw; */
   overflow: hidden;
+  /* height: 120%; */
 }
 
 .forms-container {
