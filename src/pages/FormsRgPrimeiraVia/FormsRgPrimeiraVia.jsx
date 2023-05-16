@@ -9,8 +9,8 @@ import InputMask from 'react-input-mask';
 import './FormsRgPrimeiraVia.styles.css';
 
 export default function FormsRgPrimeiraVia() {
-    const [estado, setEstado] = useState('');
-    const [cidade, setCidade] = useState('');
+    const [estado, setEstado] = useState('São Paulo');
+    const [cidade, setCidade] = useState('Adamantina');
     const [cpf, setCpf] = useState('');
     const [rg, setRg] = useState('');
     const [estadoEmissor, setEstadoEmissor] = useState('');
@@ -21,7 +21,6 @@ export default function FormsRgPrimeiraVia() {
     const [municipios, setMunicipios] = useState([]);
 
     const history = useHistory();
-    console.log(history);
   
     useEffect(() => {
         const fetchMunicipios = async () => {
@@ -96,8 +95,8 @@ export default function FormsRgPrimeiraVia() {
                             value={cidade}
                             onChange={(e) =>setCidade(e.target.value)}
                         >
-                            {municipios.map((municipio) => (
-                                <option key={municipio}>{municipio.nome}</option>
+                            {municipios.map((municipio, i) => (
+                                <option key={i}>{municipio.nome}</option>
                             ))}
                         </select>
                         ) : <p>Carregando.......</p>
@@ -212,8 +211,22 @@ export default function FormsRgPrimeiraVia() {
                 </div>
                 <footer className="containerButtonSubmit">
                     <button
-                        onClick={
-                            () => history.push('/formularioContact')
+                        onClick={() => {
+                            const data = [{
+                                estado,
+                                cidade,
+                                cpf,
+                                rg,
+                                estadoEmissor,
+                                nomeCompleto,
+                                nomeSocial,
+                                sexo,
+                                nascimento,
+                            }];
+                            localStorage.setItem('data', JSON.stringify(data));
+                            return history.push('/formularioContact')
+
+                        }
                         }
                     >
                         <span>

@@ -1,0 +1,65 @@
+.containerTerceiraPartePrimeiraVia {
+    background-image: url('../../../assets/fundoPadrao.png');
+    height: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.containerFormTerceiraParte h1 {
+    color: #9340ff;
+}
+
+.containerFormTerceiraParte h5 {
+    margin-left: 6vw;
+    margin-bottom: 4vw;
+}
+
+.containerFormTerceiraParte {
+    height: 80%;
+    width: 80%;
+}
+
+.containerTitleTerceiraParteTwo h3 {
+    box-shadow: 0px 0.4vw 0em rgba(247, 247, 247, 0.2);
+    padding: 2vw;
+    margin-bottom: 2vw;
+}
+
+.containerInputSelectTerceiraParte {
+    box-shadow: 0px 0.4vw 0em rgba(247, 247, 247, 0.2); 
+}
+
+.inputSelectTerceiraParte {
+    width: 50vw;
+    height: 3.4vw;
+}
+
+.containerInputSelectTerceiraParte h4 {
+    padding: 2vw;
+}
+
+.labelSelectTerceiraParte {
+    padding: 2vw;
+    margin-bottom: 2vw;
+}
+
+.containerSelectTurn {
+    padding: 2.4vw;
+    box-shadow: 0px 0.4vw 0em rgba(247, 247, 247, 0.2); 
+}
+
+.containerInputSelectTurn {
+    width: 50vw;
+    height: 3.4vw;
+}
+
+.containerRadiosTerceiraParte {
+    padding: 1.6vw 0vw 0vw 1.6vw;
+    margin-left: 2vw;
+}
+
+.containerRadiosTerceiraParte h6 {
+    margin-bottom: 2.4vw;
+}

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import InputMask from 'react-input-mask';
+import { useHistory } from 'react-router-dom';
 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,6 +11,8 @@ export default function SegundaPartePrimeiraVia() {
     const [telefone, setTelefone] = useState('');
     const [email, setEmail] = useState('');
     const [emailValido, setEmailValido] = useState(true);
+
+    const history = useHistory();
 
     const handleChange = (e) => {
         setTelefone(e.target.value);
@@ -66,7 +69,13 @@ export default function SegundaPartePrimeiraVia() {
                             </label>
                         </div>
                         <div className="secondBottomForms">
-                            <button>
+                            <button
+                                onClick={
+                                    () => {
+                                        history.push('/postoDeAtendimento')
+                                    }
+                                }
+                            >
                                 <span>
                                 Continuar
                                 </span>
