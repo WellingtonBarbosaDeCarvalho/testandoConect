@@ -1,7 +1,7 @@
 import './Header.styles.css';
 
 import exclamacao from '../../assets/Headline.png';
-import modeloConectando from '../../assets/modeloConectando.png'
+import modeloConectando from '../../assets/modeloConectando-min.png'
 
 export default function Header() {
     return (
