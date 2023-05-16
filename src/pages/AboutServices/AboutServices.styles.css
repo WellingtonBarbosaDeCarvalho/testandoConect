@@ -2,7 +2,6 @@
     display: flex;
     background-image: url('../../assets/fundoPadrao.png');
     color: white;
-    height: 66vw;
     overflow: hidden;
 }
 

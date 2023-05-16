@@ -8,7 +8,8 @@ export default function AboutServices() {
     return (
         <div className="containerAboutServices">
             <div className="containerTextServices">
-                <h1 className="titleAboutServices">O que
+                <h1 className="titleAboutServices">
+                    O que
                     <br />
                     prestamos:
                 </h1>
