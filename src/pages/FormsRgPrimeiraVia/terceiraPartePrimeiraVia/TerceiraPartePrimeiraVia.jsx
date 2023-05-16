@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import InputMask from 'react-input-mask';
 import { useHistory } from 'react-router-dom';
 
 import './TerceiraPartePrimeiraVia.styles.css';
@@ -16,7 +15,7 @@ export default function SegundaPartePrimeiraVia() {
     'Brasileiro Nato (nascido aqui)'
   );
 
-//   const history = useHistory();
+  const history = useHistory();
 
   useEffect(() => {
     const fetchPoupaTempos = async () => {
@@ -161,6 +160,19 @@ export default function SegundaPartePrimeiraVia() {
                         Brasileiro Naturalizado (de outro país) ou cidadão com Título de Igualdade
                         </label>
                     </div>
+                    <footer className='threeBottomSubmit'>
+                      <button
+                        onClick={
+                            () => {
+                                  history.push('/aviso')
+                              }
+                            }
+                          >
+                                <span>
+                                Continuar
+                              </span>
+                        </button>
+                    </footer>
                 </form>
             </div>
         </div>

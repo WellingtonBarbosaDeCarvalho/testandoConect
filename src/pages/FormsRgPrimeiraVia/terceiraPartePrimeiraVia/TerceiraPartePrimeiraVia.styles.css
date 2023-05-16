@@ -1,6 +1,5 @@
 .containerTerceiraPartePrimeiraVia {
     background-image: url('../../../assets/fundoPadrao.png');
-    height: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,3 +62,31 @@
 .containerRadiosTerceiraParte h6 {
     margin-bottom: 2.4vw;
 }
+
+.threeBottomSubmit {
+    display: flex;
+    justify-content: end;
+    /* height: 4vw; */
+    /* padding: 1vw; */
+    margin-top: 2vw;
+  }
+  
+  .threeBottomSubmit button {
+    height: 5vw;
+    font-size: 2vw;
+    padding: 0em 6vw 0em 6vw;
+    border-radius: 1vw 1.2vw 1.2vw 1vw;
+    color: white;
+    background-color: #9340FF;
+    border: 0px;
+    margin-bottom: 1em;
+  }
+  
+  .threeBottomSubmit button:hover {
+    background-color: #7B2CBF;
+    /* transition: background-color 0.5s; */
+  }
+  
+  .threeBottomSubmit button:active {
+    background-color: #7B2CBF;
+  }

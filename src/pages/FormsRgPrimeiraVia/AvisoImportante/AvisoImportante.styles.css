@@ -1,0 +1,53 @@
+.containerAvisoImportante {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url('../../../assets/fundoPadrao.png');
+    color: white;
+}
+
+.containerAvisoImportanteTitle h1 {
+    color: #9340ff;
+}
+
+.containerAvisoImportanteTitle h5 {
+    margin-left: 6vw;
+    margin-bottom: 4vw;
+}
+
+.containerAvisoImportanteTitle {
+    height: 80%;
+    width: 80%;
+    padding: 4vw;
+}
+
+.containerTitleH3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0.4vw 0em rgba(247, 247, 247, 0.2);
+}
+
+.containerTitleH3 h3 {
+    /* margin-bottom: 8vw; */
+    padding: 2vw;
+}
+
+.containerAvisoFull {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 0.2vw;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0.4vw 0em rgba(247, 247, 247, 0.2);
+    padding: 2vw;
+}
+
+.containerAvisoFull h3 {
+    padding: 2vw;
+}
+
+.containerAvisoFull h4 {
+    padding: 2vw;
+}
