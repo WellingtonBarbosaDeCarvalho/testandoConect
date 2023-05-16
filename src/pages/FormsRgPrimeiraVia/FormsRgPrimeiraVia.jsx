@@ -81,8 +81,8 @@ export default function FormsRgPrimeiraVia() {
           estadoEmissor.trim() === '' ||
           nomeCompleto.trim() === '' ||
           nomeSocial.trim() === '' ||
-          genero.trim() === '' ||
-          dataNascimento.trim() === ''
+          nomeSocial.trim() === '' ||
+          nomeSocial.trim() === ''
         ) {
           setMensagemAviso('Todos os campos devem ser preenchidos corretamente.');
         } else {
@@ -278,7 +278,7 @@ export default function FormsRgPrimeiraVia() {
                     </label>
                 </div>
                 </div>
-                {mensagemAviso.length > 0 && <p>{mensagemAviso}</p>}
+                {/* {mensagemAviso.length > 0 && <p>{mensagemAviso}</p>} */}
         <footer className="containerButtonSubmit">
           <button
             disabled={!isFormValid()}
