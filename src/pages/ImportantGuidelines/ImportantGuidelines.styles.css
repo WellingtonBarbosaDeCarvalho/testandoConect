@@ -28,3 +28,16 @@
     font-weight: bold;
     line-height: 1.6;
 }
+
+@media (max-width: 1600px) and (max-height: 720px) {
+    /* Coloque aqui os estilos específicos para telas menores que 1600x720 pixels */
+    /* Por exemplo: */
+    .titleImportanteGuidelines {
+        font-size: 6vw;
+    }
+    
+    .listOrientationGuidelines {
+        font-size: 4vw;
+    }
+    /* Outros estilos para telas menores que 1600x720 pixels */
+  }
