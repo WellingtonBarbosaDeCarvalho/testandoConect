@@ -28,3 +28,23 @@
 .poupaTempoOrgao span {
     color: #9340FF;
 }
+
+
+@media (max-width: 1700px) and (max-height: 720px) {
+    /* Coloque aqui os estilos específicos para telas menores que 1600x720 pixels */
+    /* Por exemplo: */
+    .titleExemptPerson {
+        font-size: 8vw;
+        padding: 2vw;
+    }
+
+    .listIsentPerson {
+        font-size: 4vw;
+    }
+
+    .poupaTempoOrgao {
+        padding: 1vw;
+        margin: 1vw;
+    }
+    /* Outros estilos para telas menores que 1600x720 pixels */
+  }
