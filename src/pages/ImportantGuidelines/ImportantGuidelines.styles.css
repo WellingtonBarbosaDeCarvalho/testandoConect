@@ -39,5 +39,13 @@
     .listOrientationGuidelines {
         font-size: 4vw;
     }
+
+    .titleBabesGuidelines {
+        font-size: 6vw;
+    }
+
+    .listGuidelinesForBaby {
+        font-size: 4vw;
+    }
     /* Outros estilos para telas menores que 1600x720 pixels */
   }
