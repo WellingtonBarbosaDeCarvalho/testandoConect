@@ -55,7 +55,7 @@
     height: 52vw;
 }
 
-@media (max-width: 1600px) and (max-height: 720px) {
+@media (max-width: 720px) and (max-height: 1600px) and (min-resolution: 270dpi) {
     .titleAboutServices {
         font-size: 5vw;
     }
