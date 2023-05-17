@@ -46,5 +46,9 @@
         padding: 1vw;
         margin: 1vw;
     }
+
+    .contactTitle {
+        font-size: 4vw;
+    }
     /* Outros estilos para telas menores que 1600x720 pixels */
   }
