@@ -2,10 +2,11 @@
 .buttonAboutServices {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 6vw;
     border-radius: 4vw;
-    height: 8.6vw;
-    width: 32vw;
+    height: 12vw;
+    width: 34vw;
     background-color: #9340FF;
     color: white;
     font-size: 2.8vw;
