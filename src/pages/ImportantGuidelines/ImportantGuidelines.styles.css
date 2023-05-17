@@ -29,9 +29,7 @@
     line-height: 1.6;
 }
 
-@media (max-width: 1700px) and (max-height: 720px) {
-    /* Coloque aqui os estilos específicos para telas menores que 1600x720 pixels */
-    /* Por exemplo: */
+@media (max-width: 1700px) {
     .titleImportanteGuidelines {
         font-size: 6vw;
     }
@@ -47,5 +45,4 @@
     .listGuidelinesForBaby {
         font-size: 4vw;
     }
-    /* Outros estilos para telas menores que 1600x720 pixels */
   }
