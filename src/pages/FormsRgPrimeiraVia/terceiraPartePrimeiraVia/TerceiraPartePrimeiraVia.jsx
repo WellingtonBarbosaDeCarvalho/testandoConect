@@ -1,5 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
+
+// const emailServiceId = 'service_479y2ns';
+// const emailTemplateId = 'template_9k2x8fd';
+// const emailUserId = 'SEU_USER_ID';
+
+// Configuração do provedor de e-mail
+// emailjs.init(emailServiceId);
 
 import './TerceiraPartePrimeiraVia.styles.css';
 
@@ -49,6 +57,57 @@ export default function SegundaPartePrimeiraVia() {
   const handleNationalityChange = (event) => {
     setSelectedNationality(event.target.value);
   };
+
+  // const form = useRef();
+
+  const sendEmail = async () => {
+    const data = JSON.parse(localStorage.getItem('data'));
+    const filteredMessage = `
+    Nome do cliente: ${data[0].nomeCompleto},
+    Cpf: ${data[0].cpf},
+    Rg: ${data[0].rg},
+    Telefone: ${data[0].telefone},
+    Nacionalidade: ${data[0].nacionalidade},
+    Sexo: ${data[0].sexo},
+    Nascimento: ${data[0].nascimento},
+    Nome Social: ${data[0].nomeSocial},
+    E-mail: ${data[0].email},
+    Cidade: ${data[0].cidade},
+    Estado: ${data[0].estado},
+    Estado Emissor: ${data[0].estadoEmissor},
+    Serviço escolhido: ${data[0].service},
+    Posto Escolhido: ${data[0].posto},
+    Turno escolhido: ${data[0].turno},
+    `;
+
+    const templateParams = {
+      from_name: data[0].nomeCompleto,
+      message: filteredMessage,
+      email: data[0].email,
+    }
+    emailjs.send("service_479y2ns", "template_9k2x8fd", templateParams, "zW5ZeVJUu3tIn6RMB")
+    .then((response) => {
+      console.log('email enviado', response.status, response.text);
+    }, (err) => {
+      console.log(err.message);
+    })
+    ;
+  };
+
+  const validateInput = (e) => {
+    e.preventDefault();
+    const local = JSON.parse(localStorage.getItem('data'));
+        
+    local[0].posto = selectedPosto;
+    local[0].turno = selectedTurno;
+    local[0].service = selectedService;
+    local[0].nacionalidade = selectedNationality;
+
+    localStorage.setItem('data', JSON.stringify(local));
+    sendEmail();
+
+    history.push('/aviso')
+}
 
   return (
     <div className="containerTerceiraPartePrimeiraVia">
@@ -162,11 +221,7 @@ export default function SegundaPartePrimeiraVia() {
                     </div>
                     <footer className='threeBottomSubmit'>
                       <button
-                        onClick={
-                            () => {
-                                  history.push('/aviso')
-                              }
-                            }
+                        onClick={(e) => validateInput(e)}
                           >
                                 <span>
                                 Continuar

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    height: 140vh;
+    height: 150vh;
 }
 
 .containerFormTerceiraParte h1 {
@@ -67,8 +67,6 @@
 .threeBottomSubmit {
     display: flex;
     justify-content: end;
-    /* height: 4vw; */
-    /* padding: 1vw; */
     margin-top: 2vw;
   }
   
@@ -85,7 +83,6 @@
   
   .threeBottomSubmit button:hover {
     background-color: #7B2CBF;
-    /* transition: background-color 0.5s; */
   }
   
   .threeBottomSubmit button:active {

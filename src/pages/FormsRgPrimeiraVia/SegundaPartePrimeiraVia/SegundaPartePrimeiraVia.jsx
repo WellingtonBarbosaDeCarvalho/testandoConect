@@ -18,6 +18,17 @@ export default function SegundaPartePrimeiraVia() {
         setTelefone(e.target.value);
     };
 
+    const validateInputs = (e) => {
+        e.preventDefault();
+        const local = JSON.parse(localStorage.getItem('data'));
+        
+        local[0].email = email;
+        local[0].telefone = telefone;
+        localStorage.setItem('data', JSON.stringify(local));
+
+        history.push('/postoDeAtendimento')
+    }
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     const handleEmail = (e) => {
@@ -25,6 +36,8 @@ export default function SegundaPartePrimeiraVia() {
         setEmail(valor);
         setEmailValido(emailRegex.test(valor));
       };
+
+
 
     return (
         <div className="containerSegundaPartePrimeiraVia">
@@ -70,11 +83,7 @@ export default function SegundaPartePrimeiraVia() {
                         </div>
                         <div className="secondBottomForms">
                             <button
-                                onClick={
-                                    () => {
-                                        history.push('/postoDeAtendimento')
-                                    }
-                                }
+                                onClick={(e) => validateInputs(e)}
                             >
                                 <span>
                                 Continuar
