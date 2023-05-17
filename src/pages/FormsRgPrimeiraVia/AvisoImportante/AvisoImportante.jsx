@@ -1,4 +1,9 @@
+// import { MercadoPago } from 'mercadopago';
 import './AvisoImportante.styles.css';
+
+// MercadoPago.configure({
+//     access_token: 'SEU_ACCESS_TOKEN',
+//   });
 
 export default function AvisoImportante() {
     return (
