@@ -11,11 +11,17 @@ export default function SegundaPartePrimeiraVia() {
     const [telefone, setTelefone] = useState('');
     const [email, setEmail] = useState('');
     const [emailValido, setEmailValido] = useState(true);
+    const [disablesButton, setDisabledButton] = useState(true);
 
     const history = useHistory();
 
     const handleChange = (e) => {
         setTelefone(e.target.value);
+        let numeros = e.target.value.replace(/\D/g, "");
+        const validaTelefone = numeros.length === 11
+        if (validaTelefone && emailValido) {
+            setDisabledButton(false);
+        }
     };
 
     const validateInputs = (e) => {
@@ -25,8 +31,8 @@ export default function SegundaPartePrimeiraVia() {
         local[0].email = email;
         local[0].telefone = telefone;
         localStorage.setItem('data', JSON.stringify(local));
-
-        history.push('/postoDeAtendimento')
+        // console.log(emailValido);
+        history.push('/postoDeAtendimento');
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -78,12 +84,13 @@ export default function SegundaPartePrimeiraVia() {
                                     placeholder='E-mail'
                                     className="form-control inputEmailSegundaParte"
                                 />
-                                {!emailValido && <span style={{ color: 'red' }}>Email inválido</span>}
+                                {!emailValido && <span style={{ color: 'red' }}>e-mail inválido</span>}
                             </label>
                         </div>
                         <div className="secondBottomForms">
                             <button
                                 onClick={(e) => validateInputs(e)}
+                                disabled={ disablesButton }
                             >
                                 <span>
                                 Continuar

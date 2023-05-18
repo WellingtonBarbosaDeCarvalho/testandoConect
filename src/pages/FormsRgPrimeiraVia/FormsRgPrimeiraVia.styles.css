@@ -1,7 +1,6 @@
 .containerFormsContact {
   background-image: url('../../assets/fundoPadrao.png');
   overflow: hidden;
-  /* height: 92em; */
 }
 
 .forms-container {
@@ -175,7 +174,6 @@ input[type="radio"] {
 
 .containerButtonSubmit button:hover {
   background-color: #7B2CBF;
-  /* transition: background-color 0.5s; */
 }
 
 .containerButtonSubmit button:active {

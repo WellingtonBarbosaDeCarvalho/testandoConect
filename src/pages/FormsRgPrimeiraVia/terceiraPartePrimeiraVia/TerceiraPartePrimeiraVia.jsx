@@ -58,20 +58,6 @@ export default function SegundaPartePrimeiraVia() {
     setSelectedNationality(event.target.value);
   };
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js';
-    script.setAttribute('data-preference-id', '1273324264-f92cada3-65b7-4a53-a55b-af7cfb015eb6');
-    script.setAttribute('data-source', 'button');
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
-  // const form = useRef();
-
   const sendEmail = async () => {
     const data = JSON.parse(localStorage.getItem('data'));
     const filteredMessage = `
@@ -216,19 +202,19 @@ export default function SegundaPartePrimeiraVia() {
                     </div>
                         <div className="form-check containerRadiosTerceiraParte">
                         <input
-                        className="form-check-input"
-                        type="radio"
-                        name="nationality_option"
-                        id="nationality_option_2"
-                        value="Brasileiro Naturalizado (de outro país) ou cidadão com Título de Igualdade"
-                        checked={
-                        selectedNationality ===
-                        'Brasileiro Naturalizado (de outro país) ou cidadão com Título de Igualdade'
+                          className="form-check-input"
+                          type="radio"
+                          name="nationality_option"
+                          id="nationality_option_2"
+                          value="Brasileiro Naturalizado (de outro país) ou cidadão com Título de Igualdade"
+                          checked={
+                          selectedNationality ===
+                          'Brasileiro Naturalizado (de outro país) ou cidadão com Título de Igualdade'
                         }
-                        onChange={handleNationalityChange}
+                          onChange={handleNationalityChange}
                         />
                         <label className="form-check-label" htmlFor="nationality_option_2">
-                        Brasileiro Naturalizado (de outro país) ou cidadão com Título de Igualdade
+                          Brasileiro Naturalizado (de outro país) ou cidadão com Título de Igualdade
                         </label>
                     </div>
                     <footer className='threeBottomSubmit'>
