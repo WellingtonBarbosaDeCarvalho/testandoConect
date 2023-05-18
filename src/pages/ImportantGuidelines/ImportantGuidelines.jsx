@@ -3,7 +3,9 @@ import './ImportantGuidelines.styles.css';
 export default function ImportantGuidelines() {
   return (
       <section className="containerImportantGuidelines">
-        <h1 className="titleImportanteGuidelines">Orientações importantes para a realização do seu RG:</h1>
+        <div className='containerTitleImportanteGuidelines'>
+            <h1 className="titleImportanteGuidelines">Orientações importantes para a realização do seu RG:</h1>
+        </div>
         <ul className="listOrientationGuidelines">
             <li>
                 Não é necessário levar foto, pois ela é tirada no local;
@@ -34,7 +36,11 @@ export default function ImportantGuidelines() {
                 desde que os lábios se mantenham fechados, sem franzir o rosto.
             </li>
         </ul>
-        <h1 className="titleBabesGuidelines">Bebês</h1>
+        <div className='titleBabesGuidelinesDiv'>
+            <h1 className="titleBabesGuidelines">
+                Bebês
+            </h1>
+        </div>
         <ul className="listGuidelinesForBaby">
             <li>
             Quando se trata de criança a mesma deve estar sem chupeta e as mãos ou qualquer

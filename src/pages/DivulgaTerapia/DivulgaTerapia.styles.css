@@ -1,0 +1,32 @@
+.containerTerapia {
+    /* background-image: url('../../assets/backgroundTerapy.png'); */
+    background-color: #111728;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    height: 66vw;
+    color: white;
+    overflow: hidden;
+}
+
+.containerImgTerapia img {
+    position: relative;
+    top: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44vw;
+    width: 94vw;
+    border-radius: 2vw;
+}
+
+.containerTextAdjustment {
+    position: relative;
+    bottom: 14vw;
+}
+
+.containerTextAdjustment h3{
+    font-size: 2.8vw;
+}

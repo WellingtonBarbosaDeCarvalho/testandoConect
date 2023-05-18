@@ -1,16 +1,19 @@
 .containerExemptPerson {
     background-image: url('../../assets/fundoPadrao.png');
-    /* height: 34em; */
-    /* max-height: 34em; */
     color: white;
 }
 
 .titleExemptPerson {
     font-family: 'extra bold';
-    padding: 1em;
+    padding: 0.6vw;
     color: #9340FF;
-    margin-left: 2vw;
+    /* margin-left: 2vw; */
     font-size: 3.6vw;
+    background-color: #FBAE24;
+}
+
+.containerTitleExemptPerson {
+
 }
 
 .listIsentPerson {

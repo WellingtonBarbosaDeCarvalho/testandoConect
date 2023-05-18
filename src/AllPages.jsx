@@ -10,22 +10,25 @@ import ImportantGuidelines from './pages/ImportantGuidelines/ImportantGuidelines
 import ExemptPerson from './pages/ExemptPerson/ExemptPerson';
 import Contact from './pages/Contact/Contact';
 import Footer from './pages/Footer/Footer';
+import DivulgaTerapia from './pages/DivulgaTerapia/DivulgaTerapia';
 
 export default function AllPages() {
   return (
       <>
         <Header />
         <SecondPage />
-        <AboutServices />
         <Goal />
         <AppointmentScheduling />
         <ServiceCharge />
+
         <PaymentMethod />
         <PageAtention />
         <ImportantGuidelines />
         <ExemptPerson />
         <Contact />
+        <AboutServices />
         <Footer />
+        <DivulgaTerapia />
       </>
   )
 }

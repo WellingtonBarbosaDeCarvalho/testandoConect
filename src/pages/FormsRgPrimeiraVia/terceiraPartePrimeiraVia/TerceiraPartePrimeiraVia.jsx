@@ -58,6 +58,18 @@ export default function SegundaPartePrimeiraVia() {
     setSelectedNationality(event.target.value);
   };
 
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js';
+    script.setAttribute('data-preference-id', '1273324264-f92cada3-65b7-4a53-a55b-af7cfb015eb6');
+    script.setAttribute('data-source', 'button');
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   // const form = useRef();
 
   const sendEmail = async () => {

@@ -1,6 +1,7 @@
 .containerPaymentMethod {
     background-image: url('../../assets/fundoPadrao.png');
-    height: 60vw;
+    /* height: 60vw; */
+    padding: 10vw;
     color: white;
 }
 
@@ -14,13 +15,13 @@
 .containerImgBoletoAndPix {
     display: flex;
     justify-content: center;
-    margin-top: 2vw;
+    margin-top: 8vw;
 }
 
 .containerImgBoletoAndPix button {
     display: flex;
     justify-content: center;
-    margin-top: 6vw;
+    margin-top: 10vw;
     border-radius: 4vw;
     height: 8.6vw;
     width: 32vw;

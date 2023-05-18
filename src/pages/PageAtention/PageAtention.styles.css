@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vw;
+    padding: 4.13vw;
     color: white;
     overflow: hidden;
 }
@@ -11,12 +11,12 @@
 .containerPageAtention h1 {
     color: #9340FF;
     font-weight: bold;
-    font-size: 6vw;
+    font-size: 4.4vw;
     font-family: 'extra bold';
 }
 
 .containerPageAtention p {
     font-weight: bold;
-    font-size: 2.8vw;
+    font-size: 2.4vw;
     padding: 4vw;
 }

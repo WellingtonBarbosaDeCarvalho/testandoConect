@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="containerTitleParagraph">
             <h1 className="contactTitle">Contato</h1>
             <h2 className="paragaphContact">
-            Ainda está com dúvidas? Não se preocupe, entre em contato conosco, responderemos assim que possível, estamos aqui para te ajudar !
+            Ainda está com dúvidas? Não se preocupe, entre em contato conosco, estamos aqui para te ajudar !
             </h2>
         <div className="containerFormsAndLinks">
             <div className="linksForms">

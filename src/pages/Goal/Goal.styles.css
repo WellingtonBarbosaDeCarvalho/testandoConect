@@ -2,7 +2,8 @@
     background-image: url('../../assets/fundoPadrao.png');
     display: flex;
     align-items: center;
-    height: 48vw;
+    /* height: 48vw; */
+    padding: 9vw;
     color: white;
 }
 

@@ -1,7 +1,5 @@
 import './AboutServices.styles.css';
 
-import ButtonContact from '../../components/ButtonContact';
-
 import exclamacaoLana from '../../assets/Headline.png';
 
 export default function AboutServices() {
@@ -21,11 +19,10 @@ export default function AboutServices() {
                         <br />
                             RG.
                     </li>
+                    <li>
+                        Consultas de terapia alternativa.
+                    </li>
                 </ul>
-                <p className="valueServices">
-                    Valor R$ 22,90
-                </p>
-            <ButtonContact />
             </div>
             <div className="containerModelServicesImage">
                 <img

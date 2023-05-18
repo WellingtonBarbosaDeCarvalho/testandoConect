@@ -3,7 +3,9 @@ import './ExemptPerson.styles.css';
 export default function ExemptPerson() {
   return (
       <section className="containerExemptPerson">
-        <h1 className="titleExemptPerson">Caso você se classifique como uma pessoa isenta:</h1>
+        <div className="containerTitleExemptPerson">
+            <h1 className="titleExemptPerson">Caso você se classifique como uma pessoa isenta:</h1>
+        </div>
         <ul className="listIsentPerson">
             <li>
                 Em casos de furto do documento, até 30 dias após o registro do B.O;
