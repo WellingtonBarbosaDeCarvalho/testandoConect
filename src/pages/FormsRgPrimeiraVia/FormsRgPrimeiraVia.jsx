@@ -105,29 +105,6 @@ export default function FormsRgPrimeiraVia() {
           history.push('/formularioContact');
         }
       }
-    //   const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     console.log(isFormValid());
-    
-    //     if (isFormValid()) {
-    //       const data = [{
-    //         estado,
-    //         cidade,
-    //         cpf,
-    //         rg,
-    //         estadoEmissor,
-    //         nomeCompleto,
-    //         nomeSocial,
-    //         sexo,
-    //         nascimento,
-    //       }];
-    
-    //       localStorage.setItem('data', JSON.stringify(data));
-    //       history.push('/formularioContact');
-    //     } else {
-    //       setShowErrorMessage(true);
-    //     }
-    //   };
   
     return (
         <div className="containerFormsContact">
