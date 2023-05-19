@@ -3,7 +3,8 @@
     background-image: url('../../assets/fundoPadrao.png');
     color: white;
     overflow: hidden;
-    min-height: 60vw;
+    min-height: 66vw;
+    padding-bottom: 4vw;
 }
 
 .titleAboutServices {
