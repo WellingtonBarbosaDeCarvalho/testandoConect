@@ -260,7 +260,7 @@ export default function FormsRgPrimeiraVia() {
                                 </span>
                             </label>
                     </div>
-                    <label htmlFor="dataNascimento">
+                    <label className="labelDataNascimento" htmlFor="dataNascimento">
                     * Nascimento:
                     <InputMask
                         id="dataNascimento"
