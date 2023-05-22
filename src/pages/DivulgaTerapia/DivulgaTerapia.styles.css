@@ -36,3 +36,15 @@
 .containerTextAdjustment h3{
     font-size: 2.8vw;
 }
+
+@media (max-width: 700px) {
+    .containerTextAdjustment h3{
+        font-size: 4vw;
+    }
+
+    .containerTextAdjustment {
+        position: relative;
+        z-index: 1;
+        top: 34vw;
+    }
+  }
