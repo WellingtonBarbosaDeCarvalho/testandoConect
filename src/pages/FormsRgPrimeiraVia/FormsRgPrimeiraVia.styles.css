@@ -161,6 +161,10 @@ input[type="radio"] {
   margin-right: 1vw;
 }
 
+.labelForOther {
+  margin-left: 1vw;
+}
+
 .containerButtonSubmit {
   display: flex;
   justify-content: center;

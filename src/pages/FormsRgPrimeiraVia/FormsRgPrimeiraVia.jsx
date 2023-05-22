@@ -243,6 +243,19 @@ export default function FormsRgPrimeiraVia() {
                                     Feminino
                                 </span>
                         </label>
+                        <label className="labelForOther" htmlFor="outro">
+                        <span className={`option ${sexo === 'outro' ? 'selected' : ''}`}>
+                            <input
+                                type="radio"
+                                id="outro"
+                                name="sexo"
+                                value="outro"
+                                checked={sexo === 'outro'}
+                                onChange={handleSexoChange}
+                            />
+                                    Outro
+                                </span>
+                            </label>
                     </div>
                     <label htmlFor="dataNascimento">
                     Nascimento:

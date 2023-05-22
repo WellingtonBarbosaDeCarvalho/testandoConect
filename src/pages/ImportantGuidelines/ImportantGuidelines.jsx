@@ -1,12 +1,23 @@
+import { useHistory } from 'react-router-dom';
+
 import Menu from '../../components/Menu/Menu';
 import './ImportantGuidelines.styles.css';
+import ExemptPerson from '../ExemptPerson/ExemptPerson';
+
 
 export default function ImportantGuidelines() {
+    const history = useHistory();
+    console.log(history);
+
   return (
       <section className="containerImportantGuidelines">
-        <aside className="containerMenuHeader">
-          <Menu />
-        </aside>
+        {
+            history.location.pathname === '/orientacoes' && (
+                <aside className="containerMenuHeader">
+                <Menu />
+                </aside>
+            )
+        }
         <div className='containerTitleImportanteGuidelines'>
             <h1 className="titleImportanteGuidelines">Orientações importantes para a realização do seu RG:</h1>
         </div>
@@ -55,6 +66,9 @@ export default function ImportantGuidelines() {
                 olhos abertos.
             </li>
         </ul>
+        {
+         history.location.pathname === '/orientacoes' && <ExemptPerson />
+        }
       </section>
   )
 }
