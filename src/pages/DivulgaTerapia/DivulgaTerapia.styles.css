@@ -3,28 +3,30 @@
     background-color: #111728;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    /* justify-content: end; */
     align-items: center;
     text-align: center;
-    height: 66vw;
+    width: 100%;
+    /* height: 66vw; */
     color: white;
     overflow: hidden;
 }
 
 .containerImgTerapia img {
-    position: relative;
-    top: 8vw;
+    /* position: relative; */
+    /* top: 8vw; */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 44vw;
-    width: 94vw;
-    border-radius: 2vw;
+    height: 100%;
+    width: 100%;
+    margin-top: 8vw;
+    /* border-radius: 2vw; */
 }
 
 .containerTextAdjustment {
     position: relative;
-    bottom: 14vw;
+    bottom: 20vw;
 }
 
 .containerTextAdjustment h3{
