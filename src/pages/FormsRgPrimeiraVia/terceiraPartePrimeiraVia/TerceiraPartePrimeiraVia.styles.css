@@ -96,6 +96,10 @@
       height: 100vh;
     }
 
+    .containerFormTerceiraParte {
+        width: 100%;
+    }
+
     .containerTerceiraPartePrimeiraVia {
         flex: 1;
     }
