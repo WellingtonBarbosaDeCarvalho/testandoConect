@@ -1,12 +1,11 @@
 import './DivulgaTerapia.styles.css';
 
-import terapiaBack from '../../assets/backgroundTerapy.png'
+// import terapiaBack from '../../assets/backgroundTerapy.png'
 
 export default function DivulgaTerapia() {
   return (
       <div className='containerTerapia'>
         <div className='containerImgTerapia'>
-            <img src={terapiaBack} alt="" />
         <div className='containerTextAdjustment'>
             <h3>
                 Terapeuta: Lucilene Ferreira dos Santos
