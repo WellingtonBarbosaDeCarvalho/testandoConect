@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import InputMask from 'react-input-mask';
 
 import './FormsRgPrimeiraVia.styles.css';
+
 import Menu from '../../components/Menu/Menu';
 import CamposObrigatorios from '../../components/CamposObrigatorios/CamposObrigatorios';
 
