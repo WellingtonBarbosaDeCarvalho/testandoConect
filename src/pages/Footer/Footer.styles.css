@@ -17,6 +17,8 @@
 
 .containerImgFooter {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .containerImgFooter img {
@@ -33,3 +35,50 @@
 .containerImgFooter {
     background-color: #9FD2FF;
 }
+
+@media (max-width: 700px) {
+    .containerFooter {
+        flex-direction: column;
+        padding: 2vw;
+        align-items: normal;
+        /* align-items: flex-start; */
+        /* width: 100vw; */
+        /* justify-content: flex-end; */
+      }
+
+      .containerImgFooter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4vw;
+      }
+
+      .paragraphFooter {
+        font-size: 4vw;
+        margin: 0px;
+        text-align: center;
+        width: 98vw;
+      };
+      
+      .containerParagraphFooter {
+        width: 100vw;
+      }
+
+      .containerParagraphTest {
+        display: flex;
+        width: 80vw;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vw;
+        line-height: 4.4vw;
+        margin-top: 6vw;
+        margin-bottom: 6vw;
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        /* justify-content: flex-start; */
+      }
+
+      .exclamacaoLanaFooter {
+        left: 88vw;
+      }
+  }
