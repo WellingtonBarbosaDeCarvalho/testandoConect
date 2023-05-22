@@ -18,6 +18,10 @@
   margin: 2vw;
 }
 
+.containerStateMunici span {
+  color: #7B2CBF;
+}
+
 .inputState {
   width: 60vw;
   height: 3em;
@@ -85,6 +89,8 @@
 .labelSocialName {
   margin-right: 10vw;
 }
+
+
 
 .socialNameInput {
   text-align: center;
