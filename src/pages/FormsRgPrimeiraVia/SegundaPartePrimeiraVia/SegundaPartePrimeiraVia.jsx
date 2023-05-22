@@ -2,6 +2,8 @@ import { useState } from 'react';
 import InputMask from 'react-input-mask';
 import { useHistory } from 'react-router-dom';
 
+import CamposObrigatorios from '../../../components/CamposObrigatorios/CamposObrigatorios';
+
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -59,10 +61,11 @@ export default function SegundaPartePrimeiraVia() {
                 
                 <div className="segundaParteInputEmail">
                     <h4>Seu dados para contato</h4>
+                    <CamposObrigatorios />
                     <form action="">
                         <div className="containerInputSegundaParte">
                             <label htmlFor="inputTelefone">
-                            Telefone com DDD:
+                            * Telefone com DDD:
                                 {' '}
                                 <InputMask
                                     mask="(99) 9 9999-9999"
@@ -74,7 +77,7 @@ export default function SegundaPartePrimeiraVia() {
                                 />
                             </label>
                             <label htmlFor="inputEmail" className="inputEmailLabel">
-                                E-mail:
+                                * E-mail:
                                 {' '}
                                 <InputMask
                                     mask={/\S+@\S+\.\S+/}

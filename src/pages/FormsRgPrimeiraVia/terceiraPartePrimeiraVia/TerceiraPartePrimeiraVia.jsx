@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
+import CampoObrigatorios from '../../../components/CamposObrigatorios/CamposObrigatorios';
+
 // const emailServiceId = 'service_479y2ns';
 // const emailTemplateId = 'template_9k2x8fd';
 // const emailUserId = 'SEU_USER_ID';
@@ -118,8 +120,9 @@ export default function SegundaPartePrimeiraVia() {
           <form action="">
                 <div className="containerInputSelectTerceiraParte">
                 <h3>Selecione um dos Postos abaixo</h3>
+                    <CampoObrigatorios />
                 <label htmlFor="" className="labelSelectTerceiraParte">
-                    Posto de Atendimento:{' '}
+                    * Posto de Atendimento:{' '}
                     {poupatempos.length > 0 ? (
                     <select
                         type="text"
@@ -137,11 +140,11 @@ export default function SegundaPartePrimeiraVia() {
                     <h3>Carregando....</h3>
                     )}
                 </label>
-                <h4>Em que dia e hora deseja ser atendido(a)? (Como PRIMEIRA Opção)</h4>
+                <h4>Em que dia e hora deseja ser atendido(a) ?</h4>
                 </div>
                 <div className="containerSelectTurn">
                 <label htmlFor="">
-                    Em qual turno?{' '}
+                    * Em qual turno?{' '}
                     <select
                     type="text"
                     className="form-control containerInputSelectTurn"
@@ -157,7 +160,7 @@ export default function SegundaPartePrimeiraVia() {
                     </label>
                     </div>
                     <div className="form-check containerRadiosTerceiraParte">
-                    <h6>Serviço a ser Agendado:</h6>
+                    <h6>* Serviço a ser Agendado:</h6>
                         <input
                             className="form-check-input"
                             type="radio"
@@ -186,7 +189,7 @@ export default function SegundaPartePrimeiraVia() {
                         </label>
                     </div>
                     <div className="form-check containerRadiosTerceiraParte">
-                        <h6>Nacionalidade:</h6>
+                        <h6>* Nacionalidade:</h6>
                         <input
                         className="form-check-input"
                         type="radio"

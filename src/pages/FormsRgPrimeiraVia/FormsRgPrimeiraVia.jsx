@@ -8,6 +8,7 @@ import InputMask from 'react-input-mask';
 
 import './FormsRgPrimeiraVia.styles.css';
 import Menu from '../../components/Menu/Menu';
+import CamposObrigatorios from '../../components/CamposObrigatorios/CamposObrigatorios';
 
 export default function FormsRgPrimeiraVia() {
     const [estado, setEstado] = useState('São Paulo');
@@ -122,8 +123,9 @@ export default function FormsRgPrimeiraVia() {
                     <h3>
                         Local do Agendamento:
                     </h3>
+                    <CamposObrigatorios />
                     <label>
-                    Estado:
+                    *Estado:
                     <select
                         className="form-select inputState"
                         value={estado}
@@ -135,7 +137,7 @@ export default function FormsRgPrimeiraVia() {
                     <p><span>*</span> No momento estamos fornecendo atendimento somente no estado de São Paulo.</p>
                     </label>
                     <label>
-                        Cidade ou Município:
+                    * Cidade ou Município:
                     {
                         municipios.length > 0 ? (
                         <select
@@ -154,11 +156,11 @@ export default function FormsRgPrimeiraVia() {
 
                 <div className="containerCPFandRG">
                     <h2>
-                        Dados para RG – Carteira de Identidade
+                        * Dados para RG – Carteira de Identidade
                     </h2>
                     <div className="rgCpfFlex">
 
-                        <label htmlFor="cpf">CPF:
+                        <label htmlFor="cpf">* CPF:
                             <InputMask
                                 id="cpf"
                                 mask="999.999.999-99"
@@ -170,7 +172,7 @@ export default function FormsRgPrimeiraVia() {
                         </label>
                                    
                         <label className="rgLabel">
-                        RG:
+                        * RG:
                         <InputMask
                             id="rg"
                             mask="99.999.999-9"
@@ -183,7 +185,7 @@ export default function FormsRgPrimeiraVia() {
                     </div>
                     <div className="emissorRgAndName">
                         <label>
-                        Estado Emissor do RG:
+                        * Estado Emissor do RG:
                         <input
                             type="text"
                             value={estadoEmissor}
@@ -194,7 +196,7 @@ export default function FormsRgPrimeiraVia() {
                         </label>
                 
                         <label className="containerFullName">
-                        Nome Completo:
+                        * Nome Completo:
                         <input
                             type="text"
                             value={nomeCompleto}
@@ -215,7 +217,7 @@ export default function FormsRgPrimeiraVia() {
                                 placeholder="Nome Social" aria-label="Nome Social"
                             />
                         </label>
-                        <label className="labelFormGener">Sexo:</label>
+                        <label className="labelFormGener">* Sexo:</label>
                             <div>
                                 <label className="labelSexMasc" htmlFor="masculino">
                                 <span className={`option ${sexo === 'masculino' ? 'selected' : ''}`}>
@@ -258,7 +260,7 @@ export default function FormsRgPrimeiraVia() {
                             </label>
                     </div>
                     <label htmlFor="dataNascimento">
-                    Nascimento:
+                    * Nascimento:
                     <InputMask
                         id="dataNascimento"
                         mask="99/99/9999"
