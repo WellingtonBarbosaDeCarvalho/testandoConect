@@ -151,10 +151,8 @@ export default function SegundaPartePrimeiraVia() {
                     value={selectedTurno}
                     onChange={handleTurnoChange}
                     >
-                        <option>Início da manhã - Entre 09:00 e 11:00</option>
-                        <option>Fim da manhã - Entre 11:00 e 12:00</option>
-                        <option>Início da tarde - Entre 12:00 e 14:00</option>
-                        <option>Fim da tarde - Entre 14:00 e 17:00</option>
+                        <option>Turno da MANHÃ - Entre 07:00 e 12:00</option>
+                        <option>Turno da TARDE - Entre 12:00 e 19:00</option>
                         <option>Qualquer turno - Qualquer horário</option>
                     </select>
                     </label>
