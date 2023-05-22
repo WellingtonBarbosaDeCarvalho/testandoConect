@@ -9,14 +9,11 @@
 .containerMenuHeader {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
-  /* align-items: center; */
   background-color: #12192c;
   color: white;
   padding: 1vw;
   font-size: 2vw;
   border-radius: 0em 0vw 4vw 4vw;
-  /* width: 10vw; */
   margin-bottom: 1vw;
   text-align: center;
 }
@@ -45,7 +42,8 @@
 
 @media (max-width: 700px) {
   .containerMenuHeader {
-    justify-content: center;
+    justify-content: end;
+    margin-right: 4vw;
     font-size: 4vw;
     /* width: 100%; */
   }
