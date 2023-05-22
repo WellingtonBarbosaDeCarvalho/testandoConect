@@ -2,6 +2,7 @@
     background-image: url('../../assets/fundoPadrao.png');
     /* height: 40vw; */
     color: white;
+    padding-bottom: 4vw;
 }
 
 .contactTitle {

@@ -11,10 +11,16 @@ import ExemptPerson from './pages/ExemptPerson/ExemptPerson';
 import Contact from './pages/Contact/Contact';
 import Footer from './pages/Footer/Footer';
 import DivulgaTerapia from './pages/DivulgaTerapia/DivulgaTerapia';
+import Menu from './components/Menu/Menu';
+
+import './App.css';
 
 export default function AllPages() {
   return (
       <>
+        <aside className="containerMenuHeader">
+          <Menu />
+        </aside>
         <Header />
         <SecondPage />
         <Goal />

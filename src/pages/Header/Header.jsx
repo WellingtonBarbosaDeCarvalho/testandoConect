@@ -2,6 +2,7 @@ import './Header.styles.css';
 
 import exclamacao from '../../assets/Headline.png';
 import modeloConectando from '../../assets/modeloConectando-min.png'
+import Menu from '../../components/Menu/Menu';
 
 export default function Header() {
     return (
@@ -19,10 +20,10 @@ export default function Header() {
             </div>
             <div className="containerElipseAndExcla">
                 <img
-                        src={ modeloConectando }
-                        alt="modelo apresentando um RG em suas mãos"
-                        className="conectandoModels"
-                    />
+                    src={ modeloConectando }
+                    alt="modelo apresentando um RG em suas mãos"
+                    className="conectandoModels"
+                />
             </div>
         </div>
     )

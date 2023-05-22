@@ -1,8 +1,12 @@
+import Menu from '../../components/Menu/Menu';
 import './Privacity.styles.css';
 
 export default function Privacity() {
   return (
       <section className="privacityContainer">
+        <aside className="containerMenuHeader">
+          <Menu />
+        </aside>
         <h1>Política de privacidade</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nisi sem, consequat ut est a, mattis maximus est. Mauris lacinia, arcu sit amet mattis maximus, leo lacus luctus lectus, vel dapibus dolor nisl non mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget ex ut lorem sodales semper a id risus. In hac habitasse platea dictumst. Suspendisse auctor sapien nec arcu auctor eleifend quis sit amet leo. Pellentesque tincidunt eget diam at ullamcorper. Maecenas quis vestibulum orci, a cursus est.

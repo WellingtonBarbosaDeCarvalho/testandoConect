@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import InputMask from 'react-input-mask';
 
 import './FormsRgPrimeiraVia.styles.css';
+import Menu from '../../components/Menu/Menu';
 
 export default function FormsRgPrimeiraVia() {
     const [estado, setEstado] = useState('São Paulo');
@@ -105,6 +106,9 @@ export default function FormsRgPrimeiraVia() {
   
     return (
         <div className="containerFormsContact">
+            <aside className="containerMenuHeader">
+                <Menu />
+            </aside>
             <div className="containerTitleForms">
                 <h1>
                     RG - Carteira de Identidade
