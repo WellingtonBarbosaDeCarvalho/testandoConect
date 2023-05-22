@@ -4,7 +4,7 @@ export default function Menu() {
   return (
       <div>
         <Link to="/">
-          Inicio
+          Início
         </Link>
         {' '}
         <Link to="/formulario">
