@@ -15,7 +15,7 @@
   font-size: 2vw;
   border-radius: 0em 0vw 4vw 4vw;
   margin-bottom: 1vw;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .containerMenuHeader a {

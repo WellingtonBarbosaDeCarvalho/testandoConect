@@ -46,9 +46,9 @@
   
     .menu ul {
       flex-direction: column; /* Exibir os itens do menu em uma coluna */
-      align-items: center; /* Centralizar verticalmente os itens do menu */
       padding: 20px; /* Adicionar espaço interno ao menu */
       background-color: #12192C; /* Cor de fundo do menu */
+      line-height: 8vw;
     }
   }
   
