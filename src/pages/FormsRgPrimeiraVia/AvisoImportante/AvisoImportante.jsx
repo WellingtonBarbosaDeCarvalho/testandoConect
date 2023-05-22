@@ -18,7 +18,7 @@ export default function AvisoImportante() {
                     <h3>IMPORTANTE</h3>
                     <p>
                         Após a confirmação de seu pagamento em nosso sistema,
-                        você receberá via e-mail o protocolo de agendamento contendo data,
+                        você receberá via e-mail e Whatsapp o protocolo de agendamento contendo data,
                         hora e local marcados para seu atendimento.
                     </p>
                     <h4>NÃO VÁ AO POSTO SEM O PROTOCOLO DE ATENDIMENTO</h4>
