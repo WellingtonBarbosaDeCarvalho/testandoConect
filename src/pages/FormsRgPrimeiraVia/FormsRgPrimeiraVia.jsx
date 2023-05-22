@@ -79,10 +79,7 @@ export default function FormsRgPrimeiraVia() {
           cpf.trim() === '' ||
           rg.trim() === '' ||
           estadoEmissor.trim() === '' ||
-          nomeCompleto.trim() === '' ||
-          nomeSocial.trim() === '' ||
-          nomeSocial.trim() === '' ||
-          nomeSocial.trim() === ''
+          nomeCompleto.trim() === ''
         ) {
           setMensagemAviso('Todos os campos devem ser preenchidos corretamente.');
         } else {
