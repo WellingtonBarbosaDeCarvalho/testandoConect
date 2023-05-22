@@ -1,8 +1,12 @@
+import Menu from '../../components/Menu/Menu';
 import './ImportantGuidelines.styles.css';
 
 export default function ImportantGuidelines() {
   return (
       <section className="containerImportantGuidelines">
+        <aside className="containerMenuHeader">
+          <Menu />
+        </aside>
         <div className='containerTitleImportanteGuidelines'>
             <h1 className="titleImportanteGuidelines">Orientações importantes para a realização do seu RG:</h1>
         </div>
