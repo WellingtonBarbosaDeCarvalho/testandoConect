@@ -3,11 +3,17 @@
     justify-content: center;
     flex-wrap: wrap;
     background-image: url('../../assets/fundoPadrao.png');
-    height: 100vh;
+    /* height: 100vh; */
     color: white;
 }
 
 .privacityContainer h1 {
     font-size: 4vw;
     height: 0vw;
+    margin-bottom: 8vw;
+    color: #944FFD;
+}
+
+.containerPrivacityParagraph {
+    padding: 4vw;
 }
