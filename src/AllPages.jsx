@@ -18,9 +18,9 @@ import './App.css';
 export default function AllPages() {
   return (
       <>
-        <aside className="containerMenuHeader">
+        <div className="containerMenuHeader">
           <Menu />
-        </aside>
+        </div>
         <Header />
         <SecondPage />
         <Goal />

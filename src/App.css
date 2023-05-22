@@ -3,13 +3,14 @@
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #111728;
+  overflow: hidden;
 }
 
 .containerMenuHeader {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  /* justify-content: space-around; */
+  /* align-items: center; */
   background-color: #12192c;
   color: white;
   padding: 1vw;
@@ -17,6 +18,7 @@
   border-radius: 0em 0vw 4vw 4vw;
   /* width: 10vw; */
   margin-bottom: 1vw;
+  text-align: center;
 }
 
 .containerMenuHeader a {
@@ -27,4 +29,23 @@
 
 .containerMenuHeader a:hover {
   color: #944FFD;
+}
+
+.mobile-menu-button {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 700px) {
+  .containerMenuHeader {
+    justify-content: center;
+    /* width: 100%; */
+  }
 }
