@@ -132,6 +132,7 @@ export default function FormsRgPrimeiraVia() {
                     >
                         <option value="São Paulo">São Paulo</option>
                     </select>
+                    <p>*No momento estamos fornecendo atendimento somente no estado de São Paulo.</p>
                     </label>
                     <label>
                         Cidade ou Município:
