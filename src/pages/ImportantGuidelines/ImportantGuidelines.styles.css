@@ -1,6 +1,7 @@
 .containerImportantGuidelines {
     background-image: url('../../assets/fundoPadrao.png');
     color: white;
+    min-height: 100vh;
 }
 
 .titleImportanteGuidelines {

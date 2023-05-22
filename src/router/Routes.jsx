@@ -5,6 +5,7 @@ import FormsRgPrimeiraVia from '../pages/FormsRgPrimeiraVia/FormsRgPrimeiraVia';
 import SegundaPartePrimeiraVia from '../pages/FormsRgPrimeiraVia/SegundaPartePrimeiraVia/SegundaPartePrimeiraVia';
 import TerceiraPartePrimeiraVia from '../pages/FormsRgPrimeiraVia/terceiraPartePrimeiraVia/TerceiraPartePrimeiraVia';
 import AvisoImportante from '../pages/FormsRgPrimeiraVia/AvisoImportante/AvisoImportante';
+import ImportantGuidelines from '../pages/ImportantGuidelines/ImportantGuidelines';
 
 export default function AppRouter() {
     return (
@@ -16,6 +17,7 @@ export default function AppRouter() {
           <Route exact path="/postoDeAtendimento" component={TerceiraPartePrimeiraVia} />
           <Route exact path="/aviso" component={AvisoImportante} />
           <Route exact path="/formulario" component={FormsRgPrimeiraVia} />
+          <Route exact path="/orientacoes" component={ImportantGuidelines} />
         </Switch>
       </Router>
     );
