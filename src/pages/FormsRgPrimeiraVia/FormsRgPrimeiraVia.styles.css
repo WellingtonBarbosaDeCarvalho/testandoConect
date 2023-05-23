@@ -295,5 +295,10 @@ input[type="radio"] {
   .containerSocialName {
     justify-content: center;
   }
+
+  .socialNameInput {
+    width: 24vw;
+    margin-right: 14vw;
+  }
 }
 
