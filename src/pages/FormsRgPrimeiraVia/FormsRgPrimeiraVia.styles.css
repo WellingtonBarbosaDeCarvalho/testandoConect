@@ -304,5 +304,25 @@ input[type="radio"] {
   .containerWhatsaApp p {
     font-size: 3.6vw;
   }
+
+  .whatsapp-button-forms {
+    width: 74vw;
+    height: 10vw;
+    margin-bottom: 4vw;
+    font-size: 4.8vw;
+  }
+  
+  .whatsapp-icon-forms:before {
+    content: "";
+    display: inline-block;
+    width: 8vw;
+    height: 12vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    background-image: url('../../assets/whatsapp.png');
+    background-position: 0vw 2.4vw;
+    background-size: auto 8vw;
+    background-repeat: no-repeat;
+  }
 }
 
