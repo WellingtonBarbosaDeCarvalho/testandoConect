@@ -190,20 +190,110 @@ input[type="radio"] {
   background-color: #7B2CBF;
 }
 
+.whatsapp-button-forms {
+  /* display: flex; */
+  /* align-items: center; */
+  /* position: relative; */
+  /* bottom: 6vw; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  color: #fff;
+  font-size: 2.6vw;
+  width: 36vw;
+  height: 5.4vw;
+  padding: 2vw 1vw;
+  border-radius: 0.4vw 0.4vw 0.4vw 0.4vw;
+  font-weight: bold;
+  text-decoration: none;
+  }
+
+  .whatsapp-button-forms:hover {
+    color: white;
+  }
+  
+  /* Estilos do ícone do WhatsApp */
+  .whatsapp-icon-forms:before {
+    content: "";
+    display: inline-block;
+    width: 4.6vw;
+    height: 5vw;
+    margin-right: 0.2vw;
+    background-image: url('../../assets/whatsapp.png');
+    background-position: 0vw 1.2vw;
+    background-size: auto 3.8vw;
+    background-repeat: no-repeat;
+  }
+  
+  /* Estilos do número de telefone */
+  .whatsapp-phone-forms {
+    display: inline-block;
+    margin-bottom: 0.20vw;
+    margin-left: 0.2vw;
+  }
+  
+  /* Estilos quando o botão é clicado */
+  .whatsapp-button-forms:active {
+    background-color: #128C7E;
+  }
+
+  .containerWhatsaApp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 57.6%;
+    height: 40vw;
+    /* flex-basis: 1; */
+  }
+
+  .containerWhatsaApp p {
+    font-size: 2vw;
+  }
+
+  .containerWhatsappFormsRgPrimeiraVia {
+    max-height: 20px;
+  }
+
+  .labelDataNascimento {
+    position: relative;
+    bottom: 10vw;
+  }
+
+  .img-exclamaLana {
+    height: 3vw;
+    position: relative;
+    bottom: 4.4vw;
+    left: 6.8vw;
+  }
+
 @media (max-width: 700px) {
   .containerFormsContact {
     /* overflow: hidden; */
     padding: 4vw;
   }
 
+  .containerWhatsaApp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .labelSocialName {
     display: block;
-    width: 100%;
+    /* width: 100%; */
+    margin: 0px;
   }
 
   .labelDataNascimento {
     display: block;
-    width: 100%;
+    bottom: 0px;
+    /* width: 100%; */
+  }
+
+  .containerSocialName {
+    justify-content: center;
   }
 }
 

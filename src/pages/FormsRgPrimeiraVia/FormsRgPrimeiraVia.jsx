@@ -8,6 +8,8 @@ import InputMask from 'react-input-mask';
 
 import './FormsRgPrimeiraVia.styles.css';
 
+import exclamaLana from '../../assets/Headline.png';
+
 import Menu from '../../components/Menu/Menu';
 import CamposObrigatorios from '../../components/CamposObrigatorios/CamposObrigatorios';
 
@@ -271,9 +273,25 @@ export default function FormsRgPrimeiraVia() {
                         className="form-control socialNameInput"
                     />
                     </label>
+                    <div className="containerWhatsaApp">
+                            <p>
+                                Caso você tenha dificuldade em preencher o formulário,
+                                entre em contato conosco que te ajudaremos
+                            </p>
+                            <img
+                                src={ exclamaLana }
+                                alt="exclamação colorido simbolo oficial da conectando soluções"
+                                className="img-exclamaLana"
+                            />
+                            <a href="https://wa.me/5511934918634" className="whatsapp-button-forms" >
+                                <span className="whatsapp-icon-forms" />
+                                <span className="whatsapp-phone-forms">(11) 93491-8634</span>
+                            </a>
+                    </div>
                 </div>
                 </div>
                 {mensagemAviso.length > 0 && <p>{mensagemAviso}</p>}
+               
         <footer className="containerButtonSubmit">
           <button
             disabled={!isFormValid()}
