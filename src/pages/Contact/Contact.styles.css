@@ -5,10 +5,136 @@
     padding-bottom: 4vw;
 }
 
+.containerTitleContact {
+  padding: 4vw;
+}
+
+.linksFormsPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vw;
+}
+
+.containerContactPage {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.whatsapp-button-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2vw;
+  background-color: #25D366;
+  color: #fff;
+  font-size: 2vw;
+  width: 26vw;
+  height: 6vw;
+  padding: 2vw 1vw;
+  border-radius: 1vw 0vw 0vw 1vw;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.containerPrivacityPage {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 2.4vw;
+  margin-top: 20vw;
+}
+
+.containerPrivacityPage a {
+  text-decoration: none;
+  color: white;
+}
+
+.containerPrivacityPage a:hover {
+  color: #9340ff;
+}
+
+.linksFormsPage a:hover {
+  color: white;
+}
+
+.linksFormsPage a:hover {
+  color: white;
+}
+
+.contactTitlePage {
+  color: #9340ff;
+  font-size: 4vw;
+  margin-bottom: 6vw;
+}
+
 .contactTitle {
     color: #9340ff;
     font-size: 4vw;
     margin-left: 6vw;
+}
+
+.email-button-page {
+    display: flex;
+    align-items: center;
+    width: 32vw;
+    height: 6vw;
+    background-color: #0072C6;
+    color: #fff;
+    padding: 0.8vw 0.4vw;
+    border-radius: 0vw 1vw 1vw 0em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4vw;
+    line-height: 1.5vw;
+    /* text-align: center; */
+    margin-top: 1.2vw;
+}
+
+.email-icon-page:before {
+  content: "";
+  display: inline-block;
+  width: 4vw;
+  height: 4vw;
+  margin-right: 0.4vw;
+  background-image: url('../../assets/o-email.png');
+  background-position: 50% 50%;
+  background-size: auto 4vw;
+  background-repeat: no-repeat;
+}
+
+.email-button-page:active {
+  background-color: #005596;
+}
+
+.containerFormsAndLinks-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-icon-page:before {
+  content: "";
+  display: inline-block;
+  width: 4.6vw;
+  height: 5vw;
+  margin-right: 0.2vw;
+  background-image: url('../../assets/whatsapp.png');
+  background-position: 0vw 1vw;
+  background-size: auto 3.4vw;
+  background-repeat: no-repeat;
+}
+
+.whatsapp-phone-page {
+  display: inline-block;
+  margin-bottom: 0.20vw;
+  margin-left: 0.2vw;
+}
+
+.whatsapp-button-page:active {
+  background-color: #128C7E;
 }
 
 .paragaphContact {

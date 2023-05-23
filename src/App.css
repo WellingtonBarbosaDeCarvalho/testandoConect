@@ -9,10 +9,12 @@
 .containerMenuHeader {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   background-color: #12192c;
   color: white;
-  padding: 1vw;
-  font-size: 2vw;
+  /* padding: 1vw; */
+  font-size: 1.8vw;
   border-radius: 0em 0vw 4vw 4vw;
   margin-bottom: 1vw;
   /* text-align: center; */

@@ -69,6 +69,11 @@ function Menu() {
           </Link>
           </li>
           <li>
+            <Link to="/contato">
+              Contato
+            </Link>
+          </li>
+          <li>
           <Link to="/orientacoes">
             Orientações 1° e 2° via do RG
           </Link>
