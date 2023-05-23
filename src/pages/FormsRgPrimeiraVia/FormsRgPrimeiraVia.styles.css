@@ -300,5 +300,9 @@ input[type="radio"] {
   .img-exclamaLana {
     bottom: 6.6vw;
   }
+
+  .containerWhatsaApp p {
+    font-size: 3.6vw;
+  }
 }
 
