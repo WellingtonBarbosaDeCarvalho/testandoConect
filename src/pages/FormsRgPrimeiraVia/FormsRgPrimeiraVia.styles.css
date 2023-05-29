@@ -80,10 +80,15 @@
 
 .containerSocialName {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
   padding: 2vw;
   width: 100%;
+}
+
+.containerWhatsAppAndNascimento {
+  display: flex;
+  padding: 1.2vw;
 }
 
 .labelSocialName {
@@ -243,7 +248,7 @@ input[type="radio"] {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    width: 57.6%;
+    width: 56%;
     height: 40vw;
     /* flex-basis: 1; */
   }
@@ -257,8 +262,8 @@ input[type="radio"] {
   }
 
   .labelDataNascimento {
-    position: relative;
-    bottom: 10vw;
+    /* position: relative; */
+    /* bottom: 10vw; */
   }
 
   .img-exclamaLana {

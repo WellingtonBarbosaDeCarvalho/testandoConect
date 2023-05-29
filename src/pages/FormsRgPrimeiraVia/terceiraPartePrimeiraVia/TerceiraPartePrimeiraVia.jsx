@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
+import po from '../../../mock/mockPoupaTempo.json';
+
 import CampoObrigatorios from '../../../components/CamposObrigatorios/CamposObrigatorios';
 
 // const emailServiceId = 'service_479y2ns';
@@ -25,24 +27,27 @@ export default function SegundaPartePrimeiraVia() {
     'Brasileiro Nato (nascido aqui)'
   );
 
+    console.log(po);
   const history = useHistory();
 
-  useEffect(() => {
-    const fetchPoupaTempos = async () => {
-      try {
-        const response = await fetch(
-          'https://forms.mondiconect.com/api/field-by-names/poupatempo'
-        );
-        const data = await response.json();
+  // useEffect(() => {
+  //   const fetchPoupaTempos = async () => {
+  //     try {
+  //       // const response = await fetch(
+  //       //   'https://forms.mondiconect.com/api/field-by-names/poupatempo'
+  //       // );
+  //       // const data = await response.json();
+  //       const rep = await po;
+  //       console.log(rep);
 
-        setPoupaTempos(data.field_values);
-      } catch (e) {
-        console.error(e);
-      }
-    };
+  //       setPoupaTempos(rep);
+  //     } catch (e) {
+  //       console.error(e);
+  //     }
+  //   };
 
-    fetchPoupaTempos();
-  }, []);
+  //   fetchPoupaTempos();
+  // }, []);
 
   const handlePostoChange = (event) => {
     setSelectedPosto(event.target.value);
@@ -123,14 +128,14 @@ export default function SegundaPartePrimeiraVia() {
                     <CampoObrigatorios />
                 <label htmlFor="" className="labelSelectTerceiraParte">
                     * Posto de Atendimento:{' '}
-                    {poupatempos.length > 0 ? (
+                    {po.length > 0 ? (
                     <select
                         type="text"
                         className="form-control inputSelectTerceiraParte"
                         value={selectedPosto}
                         onChange={handlePostoChange}
                     >
-                        {poupatempos.map((poupatempo, i) => (
+                        {po[0].field_values.map((poupatempo, i) => (
                         <option value={poupatempo.value} key={i}>
                             {poupatempo.value}
                         </option>

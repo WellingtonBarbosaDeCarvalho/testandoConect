@@ -220,8 +220,8 @@ export default function FormsRgPrimeiraVia() {
                                 placeholder="Nome Social" aria-label="Nome Social"
                             />
                         </label>
+                        <div className='containerSexSelectionLabel'></div>
                         <label className="labelFormGener">* Sexo:</label>
-                            <div>
                                 <label className="labelSexMasc" htmlFor="masculino">
                                 <span className={`option ${sexo === 'masculino' ? 'selected' : ''}`}>
                                     <input
@@ -262,6 +262,7 @@ export default function FormsRgPrimeiraVia() {
                                 </span>
                             </label>
                     </div>
+                    <div className='containerWhatsAppAndNascimento'></div>
                     <label className="labelDataNascimento" htmlFor="dataNascimento">
                     * Nascimento:
                     <InputMask
@@ -288,7 +289,6 @@ export default function FormsRgPrimeiraVia() {
                                 <span className="whatsapp-phone-forms">(11) 93491-8634</span>
                             </a>
                     </div>
-                </div>
                 </div>
                 {mensagemAviso.length > 0 && <p>{mensagemAviso}</p>}
                
