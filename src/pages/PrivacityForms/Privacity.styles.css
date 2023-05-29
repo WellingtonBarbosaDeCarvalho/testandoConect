@@ -25,4 +25,18 @@
     .privacityContainer{
         height: 100vh;
     }
+
+    .privacityContainer h1 {
+        font-size: 6vw;
+        display: block;
+        margin-bottom: 8vw;
+        color: #944FFD;
+    }
+
+    .containerPrivacityParagraph {
+        padding: 4vw;
+        font-size: 4vw;
+        background-color: #12192C;
+        border-radius: 4vw;
+    }
   }
