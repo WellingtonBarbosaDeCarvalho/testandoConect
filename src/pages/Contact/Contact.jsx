@@ -1,5 +1,6 @@
 import { Link, useHistory } from 'react-router-dom';
 import './Contact.styles.css';
+import Menu from '../../components/Menu/Menu';
 
 // function openWhatsApp() {
 //     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -12,11 +13,14 @@ import './Contact.styles.css';
 
 export default function Contact() {
     const history = useHistory();
-    if (history.location.pathname) {
+    if (history.location.pathname === '/contato') {
         return (
             <section className={
                 history.location.pathname === '/contato' ? 'containerContact containerContactPage' : 'containerContact'
             }>
+                        <div className="containerMenuHeader">
+          <Menu />
+        </div>
                 <div className={'containerTitleParagraphPage'}>
                     <div className='containerTitleContact'>
                         <h1 className="contactTitlePage">Contato</h1>
@@ -46,14 +50,8 @@ export default function Contact() {
         );
     }
   return (
-      <section className={
-        history.location.pathname === '/contato' ? 'containerContact containerContactPage' : 'containerContact'
-    }>
-        <div className={
-            history.location.pathname === '/contato'
-            ? "containerTitleParagraph containerTitleParagraphPage"
-            : 'containerTitleParagraph'
-            }>
+      <section className='containerContact'>
+        <div className='containerTitleParagraph'>
             <h1 className="contactTitle">Contato</h1>
             <h2 className="paragaphContact">
             Ainda está com dúvidas? Não se preocupe, entre em contato conosco, estamos aqui para te ajudar !

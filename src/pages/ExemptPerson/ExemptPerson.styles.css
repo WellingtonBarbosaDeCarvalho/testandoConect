@@ -12,14 +12,11 @@
     background-color: #FBAE24;
 }
 
-.containerTitleExemptPerson {
-
-}
-
 .listIsentPerson {
     font-weight: bold;
     padding: 2em;
     line-height: 1.8;
+    font-size: 2.4vw;
 }
 
 .poupaTempoOrgao {
