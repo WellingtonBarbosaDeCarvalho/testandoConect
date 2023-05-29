@@ -68,7 +68,7 @@ export default function FormsRgPrimeiraVia() {
           cidade &&
           cpf &&
           rg &&
-          estadoEmissor &&
+        //   estadoEmissor &&
           nomeCompleto &&
           sexo &&
           nascimento
@@ -101,7 +101,7 @@ export default function FormsRgPrimeiraVia() {
           cidade.trim() === '' ||
           cpf.trim() === '' ||
           rg.trim() === '' ||
-          estadoEmissor.trim() === '' ||
+        //   estadoEmissor.trim() === '' ||
           nomeCompleto.trim() === ''
         ) {
           setMensagemAviso('Todos os campos devem ser preenchidos corretamente.');
