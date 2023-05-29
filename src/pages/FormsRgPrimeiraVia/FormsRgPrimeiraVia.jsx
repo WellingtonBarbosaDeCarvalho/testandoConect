@@ -262,7 +262,7 @@ export default function FormsRgPrimeiraVia() {
                                 </span>
                             </label>
                     </div>
-                    <div className='containerWhatsAppAndNascimento'></div>
+                    <div className='containerWhatsAppAndNascimento'>
                     <label className="labelDataNascimento" htmlFor="dataNascimento">
                     * Nascimento:
                     <InputMask
@@ -289,6 +289,7 @@ export default function FormsRgPrimeiraVia() {
                                 <span className="whatsapp-phone-forms">(11) 93491-8634</span>
                             </a>
                     </div>
+                </div>
                 </div>
                 {mensagemAviso.length > 0 && <p>{mensagemAviso}</p>}
                

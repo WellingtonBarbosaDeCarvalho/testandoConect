@@ -252,7 +252,7 @@ input[type="radio"] {
     flex-direction: column;
     text-align: center;
     width: 56%;
-    height: 20vw;
+    /* height: 20vw; */
     /* flex-basis: 1; */
   }
 
@@ -284,8 +284,19 @@ input[type="radio"] {
 
   .containerWhatsaApp {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding: 3.4vw;
+    width: 100%;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .containerWhatsAppAndNascimento {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    width: 100%;
+    align-items: center;
   }
 
   .labelSocialName {
@@ -306,9 +317,9 @@ input[type="radio"] {
   }
 
   .img-exclamaLana {
-    height: 5.2vw;
-    bottom: 10vw;
-    left: 18vw;
+    height: 6.2vw;
+    bottom: 9vw;
+    left: 12.4vw;
   }
 
   .containerWhatsaApp p {
