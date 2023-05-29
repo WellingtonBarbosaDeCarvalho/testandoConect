@@ -246,10 +246,13 @@ input[type="radio"] {
   .containerWhatsaApp {
     display: flex;
     align-items: center;
+    position: relative;
+    bottom: 4vw;
+    left: 3vw;
     flex-direction: column;
     text-align: center;
     width: 56%;
-    height: 40vw;
+    height: 20vw;
     /* flex-basis: 1; */
   }
 
