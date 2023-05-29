@@ -1,4 +1,5 @@
 // import { MercadoPago } from 'mercadopago';
+import { useHistory } from 'react-router-dom';
 import './AvisoImportante.styles.css';
 
 // MercadoPago.configure({
@@ -6,11 +7,44 @@ import './AvisoImportante.styles.css';
 //   });
 
 export default function AvisoImportante() {
+    const history = useHistory();
+
     return (
         <div className="containerAvisoImportante">
             <div className="containerAvisoImportanteTitle">
                 <h1>RG - Carteira de Identidade</h1>
                 <h5>Pedido de Documento</h5>
+                <div className="containerButtonPayment">
+                    <div className='containerButtonPaymentNow'>
+                        <button
+                            type='button'
+                            className='buttonPaymentPadrao'
+                        >
+                            <span>DESEJO FAZER O PAGAMENTO AGORA</span>
+                        </button>
+                        <p>
+                        *Ao clicar no botão acima,
+                        você será redirecionado ao ambiente de pagamento do Mercado Pago para finalizar o processo de pagamento com segurança.
+                        </p>
+                    </div>
+                    <div className='containerButtonAfter'>
+                        <button
+                            type='button'
+                            className='buttonPaymentPadrao'
+                            onClick={() => {
+                                history.push('/paymentAfter')
+                            }}
+                        >
+                            <span>QUERO FAZER O PAGAMENTO DEPOIS</span>
+                        </button>
+                        <p>
+                            *O Comprovante de transferência deve ser enviado em até <em>48h</em> ao <em><br />e-mail: Sac.conectandosolucoes@gmail.com</em>
+                            ou via <em>WHATSAPP: <br /> (11) 93491-8634</em> <br /> ao número da empresa.
+                        </p>
+                    </div>
+                       
+                    
+                </div>
                 <div className='containerTitleH3'>
                     <h3>Leia o aviso abaixo</h3>
                 </div>

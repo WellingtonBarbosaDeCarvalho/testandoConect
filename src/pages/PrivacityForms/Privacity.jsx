@@ -4,10 +4,10 @@ import './Privacity.styles.css';
 export default function Privacity() {
   return (
       <section className="privacityContainer">
+        <div>
         <aside className="containerMenuHeader">
           <Menu />
         </aside>
-        <div>
           <h1>Política de privacidade</h1>
         </div>
         <div className="containerPrivacityParagraph">

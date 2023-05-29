@@ -1,0 +1,34 @@
+.containerPaymentAfter {
+    background-color: #111728;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    padding: 4vw;
+}
+
+.containerTitlePaymentAfter {
+    padding: 4vw;
+}
+
+.containerTitlePaymentAfter h5 {
+    padding: 1.6vw;
+}
+
+.containerPaymentAfter h1 {
+    color: #7B3DBF;
+}
+
+.containerParagraphPaymentAfter {
+    text-align: center;
+}
+
+.containerParagraphPaymentAfter h4 {
+    padding: 2vw;
+}
+
+.containerParagraphPaymentAfter span {
+    font-style: italic;
+    font-size: 2.6vw;
+}
