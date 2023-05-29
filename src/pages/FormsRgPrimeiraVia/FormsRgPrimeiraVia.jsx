@@ -24,6 +24,8 @@ export default function FormsRgPrimeiraVia() {
     const [sexo, setSexo] = useState('');
     const [nascimento, setNascimento] = useState('');
     const [municipios, setMunicipios] = useState([]);
+    const [estados, setEstados] = useState([]);
+    const [selectedEstado, setSelectedEstado] = useState('');
     const [mensagemAviso, setMensagemAviso] = useState('');
 
     const history = useHistory();
@@ -33,12 +35,25 @@ export default function FormsRgPrimeiraVia() {
         try {
             const response = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados/SP/municipios');
             const data = await response.json();
+            console.log(data);
             return setMunicipios(data);
         } catch (error) {
             console.error(error);
         }
         };
 
+        const fetchEstados = async () => {
+            try {
+              const response = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados');
+              const data = await response.json();
+              const siglas = data.map((estado) => estado.sigla);
+              setEstados(siglas);
+            } catch (error) {
+              console.log(error);
+            }
+          };
+
+        fetchEstados();
         fetchMunicipios();
     }, []);
 
@@ -74,6 +89,9 @@ export default function FormsRgPrimeiraVia() {
       };
   
     // Função para lidar com o envio do formulário
+    const handleEstadoChange = (event) => {
+        setSelectedEstado(event.target.value);
+      };
 
     function validarFormulario(event) {
         event.preventDefault(); // Evita que a página seja recarregada ao submeter o formulário
@@ -189,13 +207,15 @@ export default function FormsRgPrimeiraVia() {
                     <div className="emissorRgAndName">
                         <label>
                         * Estado Emissor do RG:
-                        <input
-                            type="text"
-                            value={estadoEmissor}
-                            onChange={(e) => setEstadoEmissor(e.target.value)}
-                            className="form-control"
-                            placeholder="Estado Emissor do RG" aria-label="Estado Emissor do RG"
-                        />
+                        <select className='form-control inputEstadoEmissor' value={selectedEstado} onChange={handleEstadoChange}>
+        <option value="">Selecione um estado</option>
+        {estados.map((sigla, index) => (
+          <option key={index} value={sigla}>
+            {sigla}
+          </option>
+        ))}
+      </select>
+      {selectedEstado && <p>Você selecionou: {selectedEstado}</p>}
                         </label>
                 
                         <label className="containerFullName">
