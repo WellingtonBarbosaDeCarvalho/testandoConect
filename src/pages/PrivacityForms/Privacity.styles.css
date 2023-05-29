@@ -20,3 +20,9 @@
     background-color: #12192C;
     border-radius: 4vw;
 }
+
+@media (max-width: 700px) {
+    .privacityContainer{
+        height: 100vh;
+    }
+  }
