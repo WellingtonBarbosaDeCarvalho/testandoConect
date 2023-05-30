@@ -92,8 +92,8 @@
 
   @media (max-width: 700px) {
     .containerTerceiraPartePrimeiraVia {
-        height: 120vh;
-        overflow: auto;
+        /* height: 120vh; */
+        /* overflow: auto; */
     }
 
     .containerFormTerceiraParte {
@@ -108,5 +108,14 @@
         width: 40vw;
         height: 8vw;
         font-size: 4vw;
+        margin-top: 4vw;
+    }
+
+    .containerRadiosTerceiraParte h6 {
+        font-size: 6vw;
+    }
+
+    .containerInputSelectTerceiraParte h3, h4 {
+        font-size: 6vw;
     }
   }
