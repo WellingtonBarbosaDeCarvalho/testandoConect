@@ -54,16 +54,16 @@
 
 .containerButtonPayment {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     justify-content: space-between;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    /* margin-top: 2vw;
+    margin-bottom: 2vw; */
     padding-bottom: 1vw;
     box-shadow: 0px 0.2vw 0em rgba(247, 247, 247, 0.2);
 }
 
 .containerButtonAfter {
-    width: 48%;
+    /* width: 48%; */
     text-align: center;
 }
 
@@ -148,7 +148,9 @@
 
 @media (max-width: 700px) {
     .containerAvisoImportanteTitle {
-        padding: 0px;
+        padding: 2px;
+        justify-content: center;
+        align-items: center;
     }
 
     .containerAvisoImportante {
