@@ -57,7 +57,7 @@
 }
 
 .containerRadiosTerceiraParte {
-    padding: 1.6vw 0vw 0vw 1.6vw;
+    padding: 1.6vw 0vw 0vw 6vw;
     margin-left: 2vw;
 }
 
@@ -67,7 +67,7 @@
 
 .threeBottomSubmit {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     margin-top: 2vw;
   }
   
@@ -102,5 +102,11 @@
 
     .containerTerceiraPartePrimeiraVia {
         flex: 1;
+    }
+
+    .threeBottomSubmit button {
+        width: 40vw;
+        height: 8vw;
+        font-size: 4vw;
     }
   }

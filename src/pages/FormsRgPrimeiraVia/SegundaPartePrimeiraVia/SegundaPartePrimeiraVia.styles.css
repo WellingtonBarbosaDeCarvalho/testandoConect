@@ -98,3 +98,16 @@
     /* justify-content: space-around; */
   }
   
+  @media (max-width: 700px) {
+    .tituloNivelCincoCamposObrigatorios {
+      font-size: 2.8vw;
+    }
+
+    .segundaParteInputEmail h4 {
+      font-size: 6vw;
+    }
+
+    .containerInputSegundaParte {
+      text-align: center;
+    }
+  }
