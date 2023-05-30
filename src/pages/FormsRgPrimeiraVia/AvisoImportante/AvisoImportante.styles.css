@@ -160,4 +160,20 @@
     .containerAvisoImportante {
         justify-content: flex-start;
     }
+
+    .containerButtonPaymentNow {
+        width: 49%;
+    }
+
+    .containerButtonAfter {
+        width: 49%;
+    }
+
+    .containerButtonPaymentNow p {
+        font-size: 1.2vw;
+    }
+
+    .containerButtonAfter p {
+        font-size: 1.2vw;
+    }
   }
