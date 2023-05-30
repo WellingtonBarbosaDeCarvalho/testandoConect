@@ -206,7 +206,7 @@ export default function SegundaPartePrimeiraVia() {
                         Brasileiro Nato (nascido aqui)
                         </label>
                     </div>
-                        <div className="form-check containerRadiosTerceiraParte">
+                        <div className="form-check containerRadiosTerceiraParte containerRadiosTerceiraParteOne">
                         <input
                           className="form-check-input"
                           type="radio"
