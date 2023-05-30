@@ -350,4 +350,8 @@ input[type="radio"] {
     background-size: auto 8vw;
     background-repeat: no-repeat;
   }
+
+  .inputEstadoEmissor {
+    height: 3em;
+  }
 }

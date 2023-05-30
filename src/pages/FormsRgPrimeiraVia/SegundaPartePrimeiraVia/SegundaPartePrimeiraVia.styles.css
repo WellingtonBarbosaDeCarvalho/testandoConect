@@ -52,7 +52,7 @@
 
 .secondBottomForms {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     height: 4vw;
     padding: 1vw;
     margin-top: 2vw;
@@ -110,4 +110,13 @@
     .containerInputSegundaParte {
       text-align: center;
     }
+
+    #inputTelefone {
+      width: 100%;
+    }
+
+    #inputEmail {
+      width: 100%;
+    }
+
   }
