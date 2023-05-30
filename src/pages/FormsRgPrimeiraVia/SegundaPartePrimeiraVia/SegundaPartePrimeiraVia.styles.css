@@ -109,14 +109,30 @@
 
     .containerInputSegundaParte {
       text-align: center;
+      justify-content: center;
+      align-items: center;
     }
 
     #inputTelefone {
       width: 100%;
+      height: 3em;
+      font-size: 3.4vw;
     }
 
     #inputEmail {
       width: 100%;
+      height: 3em;
+      font-size: 3.4vw;
     }
 
+    .secondBottomForms button {
+      height: 8vw;
+      width: 33vw;
+      font-size: 3.4vw;
+    }
+
+    .segundaParteInputEmail h4 {
+      /* padding: 4vw; */
+      margin-top: 8vw;
+    }
   }
