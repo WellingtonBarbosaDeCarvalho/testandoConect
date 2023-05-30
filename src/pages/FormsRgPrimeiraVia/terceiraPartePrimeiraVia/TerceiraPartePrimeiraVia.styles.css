@@ -75,6 +75,7 @@
     display: flex;
     justify-content: center;
     margin-top: 2vw;
+    margin-bottom: 2vw;
   }
   
   .threeBottomSubmit button {
