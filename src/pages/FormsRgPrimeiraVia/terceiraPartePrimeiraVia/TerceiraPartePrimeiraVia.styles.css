@@ -101,7 +101,7 @@
     }
 
     .containerTerceiraPartePrimeiraVia {
-        flex: 1;
+        flex-basis: 1;
     }
 
     .threeBottomSubmit button {
