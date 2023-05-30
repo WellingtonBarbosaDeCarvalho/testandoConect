@@ -92,8 +92,8 @@
 
   @media (max-width: 700px) {
     .containerTerceiraPartePrimeiraVia {
-      overflow: hidden;
-      /* height: 100vh; */
+        height: 100%;
+        overflow: auto;
     }
 
     .containerFormTerceiraParte {
