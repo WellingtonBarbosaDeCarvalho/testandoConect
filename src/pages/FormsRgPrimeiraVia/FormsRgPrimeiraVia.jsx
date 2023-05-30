@@ -225,6 +225,7 @@ export default function FormsRgPrimeiraVia() {
                             value={nomeCompleto}
                             onChange={(e) => setNomeCompleto(e.target.value)}
                             className="form-control"
+                            id="completName"
                             placeholder="Nome Completo" aria-label="Nome Completo"
                         />
                         </label>
