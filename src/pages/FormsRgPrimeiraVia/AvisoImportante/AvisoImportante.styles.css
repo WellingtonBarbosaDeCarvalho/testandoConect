@@ -16,8 +16,8 @@
 }
 
 .containerAvisoImportanteTitle {
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     padding: 4vw;
 }
 
@@ -80,6 +80,11 @@
     color: white !important;
 }
 
+.buttonPaymentPadrao a {
+    text-decoration: none;
+    color: white;
+}
+
 .containerButtonPaymentNow {
     display: flex;
     flex-direction: column;
@@ -89,6 +94,7 @@
 
 .containerButtonPaymentNow p {
     padding: 1vw;
+    margin-top: 2vw;
     /* box-shadow: 0px 0.2vw 0em rgba(247, 247, 247, 0.2); */
 }
 
@@ -139,3 +145,13 @@
   text-decoration: none;
   color: white;
 }
+
+@media (max-width: 700px) {
+    .containerAvisoImportanteTitle {
+        padding: 0px;
+    }
+
+    .containerAvisoImportante {
+        justify-content: flex-start;
+    }
+  }

@@ -20,7 +20,9 @@ export default function AvisoImportante() {
                             type='button'
                             className='buttonPaymentPadrao'
                         >
-                            <a href='https://www.mercadopago.com.br/hub/registration/landing'>DESEJO FAZER O PAGAMENTO AGORA</a>
+                            <span>
+                                <a href='https://www.mercadopago.com.br/hub/registration/landing'>DESEJO FAZER O PAGAMENTO AGORA</a>
+                            </span>
                         </button>
                         <p>
                         *Ao clicar no botão acima,
