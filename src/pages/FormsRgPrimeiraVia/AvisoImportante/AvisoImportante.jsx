@@ -41,7 +41,7 @@ export default function AvisoImportante() {
                         </button>
                         <p>
                             *O Comprovante de transferência deve ser enviado em até <em>48h</em> ao <em><br />e-mail: Sac.conectandosolucoes@gmail.com</em>
-                            ou via <em>WHATSAPP: <br /> (11) 93491-8634</em> <br /> ao número da empresa.
+                            <br />ou via <em>WHATSAPP: <br /> (11) 93491-8634</em> <br /> ao número da empresa.
                         </p>
                     </div>
                        
